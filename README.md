@@ -10,7 +10,7 @@ This section describes the purpose, event/data interfaces, Execution Control Cha
 **Requirements:**
 The `E_CTU` block shall set `Q` to TRUE when the predefined value of `CV` is reached. When `Reset` is triggered, the `E_CTU` shall stop counting and trigger the `RO` event. The block must follow this timing diagram:
 
-![E_CTU Timing Diagram](Tech_demonstration/diagrams/out/E_CTU_DT/E_CTU_DT.png)
+![E_CTU Timing Diagram](Tech_demonstration/diagrams/out/E_CTU_TD/E_CTU_TD.png)
 
 **Implementation:**
 *   **Interface:** 
