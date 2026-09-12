@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE System SYSTEM "../LibraryElement.dtd">
+<System Name="System">
+  <Device ID="8C9CA0E0-3439-4A44-9FD6-C215065DAF42" Name="EcoRT_0" Type="Soft_dPAC" x="700" y="700.0001" Namespace="SE.DPAC">
+    <Resource ID="D8AEACB11A3836E8" Name="RES0" Type="EMB_RES_ECO" x="800" y="800" Namespace="Runtime.Management">
+      <FBNetwork>
+        <FB ID="98FF590A74C56FD8" Name="FB1" Type="E_RS" x="1260" y="380" Namespace="Main" />
+        <FB ID="C00F80BE11C49C5D" Name="FB0" Type="E_TRAIN" x="940" y="160" Namespace="Main" />
+        <FB ID="2BBEF21F4D91B26D" Name="FB2" Type="E_TRAIN" x="980" y="700" Namespace="IEC61499.Standard" />
+        <FB ID="C34AE408A0A87936" Name="FB3" Type="E_F_TRIG_2" x="1880" y="240" Namespace="Main" />
+      </FBNetwork>
+    </Resource>
+    <FBNetwork />
+  </Device>
+</System>

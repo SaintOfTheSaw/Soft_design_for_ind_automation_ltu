@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FBType GUID="94ff2b19-9e52-466b-97db-85b8828cafbf" Name="TWO_I_TWO_O" Comment="Extracted Composite Function Block Type" Namespace="Main">
+  <Identification Standard="61499-2" />
+  <VersionInfo Author="lizar" Date="9/9/2026" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="FB5_EI2" Comment="Second input event" />
+      <Event Name="FB5_EI1" Comment="First input event" />
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="FB6_EO2" Comment="Second output event,etc." />
+      <Event Name="FB6_EO1" Comment="First output event" />
+    </EventOutputs>
+  </InterfaceList>
+  <FBNetwork>
+    <FB Name="FB5" Type="E_MERGE" x="940" y="300" Namespace="IEC61499.Standard" />
+    <FB Name="FB6" Type="E_SPLIT" x="1480" y="260" Namespace="IEC61499.Standard" />
+    <EventConnections>
+      <Connection Source="FB5.EO" Destination="FB6.EI" dx1="41.54163" />
+      <Connection Source="FB5_EI2" Destination="FB5.EI2" />
+      <Connection Source="FB5_EI1" Destination="FB5.EI1" />
+      <Connection Source="FB6.EO2" Destination="FB6_EO2" />
+      <Connection Source="FB6.EO1" Destination="FB6_EO1" />
+    </EventConnections>
+  </FBNetwork>
+</FBType>

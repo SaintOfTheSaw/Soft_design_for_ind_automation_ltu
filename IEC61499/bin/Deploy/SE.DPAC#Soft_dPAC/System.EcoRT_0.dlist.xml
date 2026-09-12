@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeployFiles xmlns="http://tempuri.org/DeploySnapshot.xsd">
+  <Deployable>
+    <DeployInformation Type="Working">
+      <FileGroup Name="FileList">
+        <FileItem Name="Basics/Main#E_RS.bin" Library="IEC61499.dll" BuildSnapshot="{179DAD50-ACFB-447C-B871-BFBEEDF38534}">
+          <Modified>2026-09-10T16:11:42</Modified>
+          <Hash>59017ADB45B019244AEE3778FA8600843EBC3764E0AF1598E7920C30D6D78FBB</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#TWO_I_TWO_O.bin" Library="IEC61499.dll" BuildSnapshot="{179DAD50-ACFB-447C-B871-BFBEEDF38534}">
+          <Modified>2026-09-10T16:11:42</Modified>
+          <Hash>23EA3512BCDE13A472CB269339E56C654BFC0B6ADFC955B50DD06F8CD771B360</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#E_TRAIN.bin" Library="IEC61499.dll" BuildSnapshot="{179DAD50-ACFB-447C-B871-BFBEEDF38534}">
+          <Modified>2026-09-10T16:11:42</Modified>
+          <Hash>EEE79AAF93C8E2C4390FEAB9B5CB76A437D374F3FE3BC4E1C9E248A311922269</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#NOT_42C76073DCEB1A7A.bin" Library="IEC61499.dll" BuildSnapshot="{179DAD50-ACFB-447C-B871-BFBEEDF38534}">
+          <Modified>2026-09-10T16:11:42</Modified>
+          <Hash>25E15CD82850FBFA5E09D7F464981ED6869ED24E3902DEDF59FA6F9C06D0E3DE</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#E_F_TRIG_2.bin" Library="IEC61499.dll" BuildSnapshot="{179DAD50-ACFB-447C-B871-BFBEEDF38534}">
+          <Modified>2026-09-12T12:24:10</Modified>
+          <Hash>9C8AACDF3CF28A7BF876347BD366659A813E1FA9D7A5DF460B16626012F9282E</Hash>
+        </FileItem>
+      </FileGroup>
+      <FileGroup Name="DeployList">
+        <FileItem Name="Basics/Main#E_RS.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#TWO_I_TWO_O.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#E_TRAIN.bin" Library="IEC61499.dll" />
+        <FileItem Name="Basics/Main#NOT_42C76073DCEB1A7A.bin" Library="IEC61499.dll" />
+        <FileItem Name="Composites/Main#E_F_TRIG_2.bin" Library="IEC61499.dll" />
+      </FileGroup>
+    </DeployInformation>
+  </Deployable>
+</DeployFiles>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE System SYSTEM "../LibraryElement.dtd">
+<System Name="System" Comment="System Configuration">
+  <Attribute Name="System.Device.FolderPath" Value="EcoRT_0" />
+  <Identification Standard="61499-1" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="lizar" Date="9/9/2026" />
+  <Application ID="58D1C2FA5465BCC4" Name="APP1">
+    <SubAppNetwork>
+      <FB ID="1F9D50C712C48CA2" Name="FB1" Type="E_RS" x="1260" y="380" Namespace="Main" />
+      <Layer Name="RS_Test" BackColor="">
+        <FBName Name="FB1" />
+      </Layer>
+    </SubAppNetwork>
+  </Application>
+  <Application ID="CF3B75FD15C5EB30" Name="E_TRAIN_TEST">
+    <SubAppNetwork>
+      <FB ID="4F7B0894AD15377D" Name="FB1" Type="E_TRAIN" x="940" y="160" Namespace="Main" />
+      <FB ID="269747DDC28F2B7C" Name="FB2" Type="E_TRAIN" x="980" y="700" Namespace="IEC61499.Standard" />
+      <FB ID="550005372FE8694A" Name="FB3" Type="E_F_TRIG" x="1880" y="240" Namespace="Main" />
+    </SubAppNetwork>
+  </Application>
+  <Device ID="8C9CA0E0-3439-4A44-9FD6-C215065DAF42" Name="EcoRT_0" Type="Soft_dPAC" x="700" y="700.0001" Namespace="SE.DPAC">
+    <Resource ID="D8AEACB11A3836E8" Name="RES0" Type="EMB_RES_ECO" x="800" y="800" Namespace="Runtime.Management">
+      <FBNetwork>
+        <FB ID="98FF590A74C56FD8" Name="FB1" Type="E_RS" x="1260" y="380" Namespace="Main" />
+        <FB ID="C00F80BE11C49C5D" Name="FB0" Type="E_TRAIN" x="940" y="160" Namespace="Main" />
+        <FB ID="2BBEF21F4D91B26D" Name="FB2" Type="E_TRAIN" x="980" y="700" Namespace="IEC61499.Standard" />
+        <FB ID="C34AE408A0A87936" Name="FB3" Type="E_F_TRIG" x="1880" y="240" Namespace="Main" />
+      </FBNetwork>
+    </Resource>
+    <FBNetwork />
+  </Device>
+  <Mapping From="APP1.FB1" To="EcoRT_0.RES0" />
+  <Mapping From="E_TRAIN_TEST.FB1" To="EcoRT_0.RES0.FB0" />
+  <Mapping From="E_TRAIN_TEST.FB2" To="EcoRT_0.RES0" />
+  <Mapping From="E_TRAIN_TEST.FB3" To="EcoRT_0.RES0" />
+</System>

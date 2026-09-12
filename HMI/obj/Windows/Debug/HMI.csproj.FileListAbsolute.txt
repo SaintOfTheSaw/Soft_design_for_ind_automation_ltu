@@ -1,0 +1,13 @@
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\bin\Windows\Debug\HMI.deps.json
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\bin\Windows\Debug\HMI.dll
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\bin\Windows\Debug\HMI.pdb
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\bin\Windows\Debug\HMIBaseSymbols.dll
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\bin\Windows\Debug\SE.DPAC.HMI.dll
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\bin\Windows\Debug\SE.DPAC.HMI.imgstore
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\obj\Windows\Debug\HMI.csproj.AssemblyReference.cache
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\obj\Windows\Debug\HMI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\obj\Windows\Debug\HMI.csproj.CoreCompileInputs.cache
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\obj\Windows\Debug\HMI.langstore
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\obj\Windows\Debug\HMI.csproj.CopyComplete
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\obj\Windows\Debug\HMI.dll
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HMI\obj\Windows\Debug\HMI.pdb

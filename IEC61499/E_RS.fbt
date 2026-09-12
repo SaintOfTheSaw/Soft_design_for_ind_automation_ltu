@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="8b263aa6-0a82-4fc7-a640-6f24767b31c8" Name="E_RS" Comment="Basic Function Block Type" Namespace="Main">
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="lizar" Date="9/9/2026" Remarks="Template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="R" Comment="Initialization Request" />
+      <Event Name="S" Comment="Normal Execution Request" />
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="EO" Comment="Initialization Confirm">
+        <With Var="Q" />
+      </Event>
+    </EventOutputs>
+    <OutputVars>
+      <VarDeclaration Name="Q" Type="BOOL" Comment="Output event qualifier" />
+    </OutputVars>
+  </InterfaceList>
+  <BasicFB>
+    <Attribute Name="FBType.Basic.Algorithm.Order" Value="A_SET,A_RESET" />
+    <ECC>
+      <ECState Name="START" Comment="Initial State" x="332.9412" y="649.4117" />
+      <ECState Name="SET" Comment="Initialization" x="923.5294" y="141.1765">
+        <ECAction Algorithm="A_SET" Output="EO" />
+      </ECState>
+      <ECState Name="RESET" Comment="Normal execution" x="1277.647" y="700.9412">
+        <ECAction Algorithm="A_RESET" Output="EO" />
+      </ECState>
+      <ECTransition Source="START" Destination="SET" Condition="S" x="661.2904" y="294.1876">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="152.3729,80.85372,187.9398,50.92533" />
+      </ECTransition>
+      <ECTransition Source="START" Destination="RESET" Condition="R" x="808.6302" y="591.149">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="173.9817,142.2655,231.0142,145.3764" />
+      </ECTransition>
+      <ECTransition Source="SET" Destination="RESET" Condition="R" x="1184.885" y="407.2906">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="289.5059,80.77309,312.1724,120.5775" />
+      </ECTransition>
+      <ECTransition Source="RESET" Destination="SET" Condition="S" x="1019.037" y="405.507">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="261.5949,119.5538,238.282,80.60769" />
+      </ECTransition>
+    </ECC>
+    <Algorithm Name="A_SET">
+      <ST><![CDATA[Q:=1;]]></ST>
+    </Algorithm>
+    <Algorithm Name="A_RESET">
+      <ST><![CDATA[Q:=0;]]></ST>
+    </Algorithm>
+  </BasicFB>
+</FBType>

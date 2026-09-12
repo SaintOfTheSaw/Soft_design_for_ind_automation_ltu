@@ -1,0 +1,8 @@
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HwConfiguration\bin\Windows\Debug\HwConfiguration.dll
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HwConfiguration\bin\Windows\Debug\HwConfiguration.pdb
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HwConfiguration\bin\Windows\Debug\SE.DPAC.HwConfiguration.dll
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HwConfiguration\obj\Windows\Debug\HwConfiguration.hwconfigproj.AssemblyReference.cache
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HwConfiguration\obj\Windows\Debug\HwConfiguration.hwconfigproj.CoreCompileInputs.cache
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HwConfiguration\obj\Windows\Debug\HwConfiguration.hwconfigproj.CopyComplete
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HwConfiguration\obj\Windows\Debug\HwConfiguration.dll
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\HwConfiguration\obj\Windows\Debug\HwConfiguration.pdb

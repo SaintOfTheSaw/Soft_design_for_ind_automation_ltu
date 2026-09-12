@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HMIProjectDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Assigment_1" Guid="{7C3AF6F5-24A8-4D58-B86E-140A62FD4BED}" xmlns="http://www.nxtcontrol.com/IEC61499.xsd">
+  <RuntimeDatabases />
+</HMIProjectDatabase>

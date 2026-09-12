@@ -1,0 +1,3 @@
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\IEC61499\bin\Default\IEC61499.dll
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\IEC61499\obj\Default\IEC61499.dfbproj.CoreCompileInputs.cache
+C:\Users\lizar\ltu_2026\Software_eng\assigment_1\Assigment_1\IEC61499\obj\Default\IEC61499.dll

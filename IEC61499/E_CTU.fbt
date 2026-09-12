@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="d5461c29-a331-421f-a51e-74d78909d4c9" Name="E_CTU" Comment="Basic Function Block Type" Namespace="Main">
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="lizar" Date="9/9/2026" Remarks="Template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="CU" Comment="Initialization Request">
+        <With Var="PV" />
+      </Event>
+      <Event Name="R" Comment="Normal Execution Request" />
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="CUO" Comment="Initialization Confirm">
+        <With Var="Q" />
+        <With Var="CV" />
+      </Event>
+      <Event Name="RO" Comment="Execution Confirmation">
+        <With Var="Q" />
+        <With Var="CV" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="PV" Type="INT" InitialValue="0" Comment="Input event qualifier" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="Q" Type="BOOL" InitialValue="FALSE" Comment="Output event qualifier" />
+      <VarDeclaration Name="CV" Type="INT" InitialValue="0" />
+    </OutputVars>
+  </InterfaceList>
+  <BasicFB>
+    <Attribute Name="FBType.Basic.Algorithm.Order" Value="A_COUNT,A_RESET" />
+    <ECC>
+      <ECState Name="START" Comment="Initial State" x="1812.941" y="777.4117" />
+      <ECState Name="COUNT" Comment="Initialization" x="1803.529" y="385.1765">
+        <ECAction Algorithm="A_COUNT" Output="CUO" />
+      </ECState>
+      <ECState Name="RESET" Comment="Normal execution" x="1157.647" y="1228.941">
+        <ECAction Algorithm="A_RESET" Output="RO" />
+      </ECState>
+      <ECTransition Source="START" Destination="COUNT" Condition="CU" x="1808.064" y="656.2941">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="452.3466,182.3181,451.771,158.3289" />
+      </ECTransition>
+      <ECTransition Source="START" Destination="RESET" Condition="R" x="1539.34" y="1066.797">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="406.5014,256.9151,364.5154,285.8455" />
+      </ECTransition>
+      <ECTransition Source="COUNT" Destination="RESET" Condition="R" x="1275.144" y="723.7896">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="327.6947,141.2489,287.132,207.0027" />
+      </ECTransition>
+      <ECTransition Source="COUNT" Destination="COUNT" Condition="CU" x="1664.352" y="137.2486">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="436,-25,382,61" />
+      </ECTransition>
+      <ECTransition Source="RESET" Destination="COUNT" Condition="CU" x="1476.822" y="732.0588">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="346.564,207.573,393.7302,145.9564" />
+      </ECTransition>
+    </ECC>
+    <Algorithm Name="A_COUNT" Comment="Initialization algorithm">
+      <ST><![CDATA[CV:=CV+1;
+CU:=FALSE;
+IF CV>=PV THEN
+	Q:=TRUE;
+ELSE
+	Q:=FALSE;
+END_IF;
+]]></ST>
+    </Algorithm>
+    <Algorithm Name="A_RESET" Comment="Normally executed algorithm">
+      <ST><![CDATA[Q:=FALSE;
+CV:=0;]]></ST>
+    </Algorithm>
+  </BasicFB>
+</FBType>

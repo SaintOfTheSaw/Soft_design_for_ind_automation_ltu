@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="8cff3532-aea0-4a48-bf36-fd5b471241ee" Name="E_TRAIN" Comment="Composite Function Block Type" Namespace="Main">
+  <Attribute Name="Configuration.FB.IDCounter" Value="11" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="lizar" Date="9/9/2026" Remarks="template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="START" Comment="Initialization Request">
+        <With Var="delayTime" />
+        <With Var="N" />
+      </Event>
+      <Event Name="STOP" Comment="Normal Execution Request">
+        <With Var="N" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="EO" Comment="Initialization Confirm">
+        <With Var="CV" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="delayTime" Type="TIME" Comment="Input event qualifier" />
+      <VarDeclaration Name="N" Type="UINT" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="CV" Type="UINT" Comment="Output event qualifier" />
+    </OutputVars>
+  </InterfaceList>
+  <FBNetwork>
+    <FB ID="1" Name="FB1" Type="E_CYCLE" x="2040" y="300" Namespace="IEC61499.Standard" />
+    <FB ID="3" Name="FB2" Type="E_CTU" x="2900" y="640" Namespace="IEC61499.Standard" />
+    <FB ID="5" Name="FB4" Type="E_PERMIT" x="400" y="440" Namespace="IEC61499.Standard" />
+    <FB ID="8" Name="FB5" Type="TWO_I_TWO_O" x="1180" y="220" Namespace="Main" />
+    <FB ID="11" Name="FB3" Type="E_SPLIT" x="2840" y="100" Namespace="IEC61499.Standard" />
+    <Input Name="START" x="12" y="12" Type="Event" />
+    <Input Name="STOP" x="20" y="152" Type="Event" />
+    <Input Name="delayTime" x="1280" y="652" Type="Data" />
+    <Input Name="N" x="2420" y="912" Type="Data" />
+    <Output Name="EO" x="3480" y="32" Type="Event" />
+    <Output Name="CV" x="3440" y="532" Type="Data" />
+    <EventConnections>
+      <Connection Source="START" Destination="FB1.START" dx1="1600.146">
+        <AvoidsNodes>false</AvoidsNodes>
+      </Connection>
+      <Connection Source="FB4.EO" Destination="FB5.FB5_EI2" dx1="47.16675" />
+      <Connection Source="STOP" Destination="FB5.FB5_EI1" dx1="45.83331" />
+      <Connection Source="FB5.FB6_EO1" Destination="FB1.STOP" dx1="40" />
+      <Connection Source="FB5.FB6_EO2" Destination="FB2.R" dx1="207">
+        <AvoidsNodes>false</AvoidsNodes>
+      </Connection>
+      <Connection Source="FB2.CUO" Destination="FB4.EI">
+        <Points>
+          <Points>
+            <X>799.1094</X>
+            <Y>170</Y>
+          </Points>
+          <Points>
+            <X>812.5</X>
+            <Y>170</Y>
+          </Points>
+          <Points>
+            <X>812.5</X>
+            <Y>142.5</Y>
+          </Points>
+          <Points>
+            <X>712.5</X>
+            <Y>142.5</Y>
+          </Points>
+          <Points>
+            <X>712.5</X>
+            <Y>192.5</Y>
+          </Points>
+          <Points>
+            <X>82.5</X>
+            <Y>192.5</Y>
+          </Points>
+          <Points>
+            <X>82.5</X>
+            <Y>120</Y>
+          </Points>
+          <Points>
+            <X>95</X>
+            <Y>120</Y>
+          </Points>
+        </Points>
+      </Connection>
+      <Connection Source="FB1.EO" Destination="FB3.EI" dx1="48.5" />
+      <Connection Source="FB3.EO1" Destination="EO" dx1="44.3125" />
+      <Connection Source="FB3.EO2" Destination="FB2.CU" dx1="44.3125" dx2="50" dy="230" />
+    </EventConnections>
+    <DataConnections>
+      <Connection Source="N" Destination="FB2.PV" />
+      <Connection Source="delayTime" Destination="FB1.DT" dx1="89.58325">
+        <AvoidsNodes>false</AvoidsNodes>
+      </Connection>
+      <Connection Source="FB2.CV" Destination="CV" dx1="93.5625" />
+      <Connection Source="FB2.Q" Destination="FB4.PERMIT" dx1="73.5625" dx2="30" dy="280">
+        <AvoidsNodes>false</AvoidsNodes>
+      </Connection>
+    </DataConnections>
+  </FBNetwork>
+</FBType>

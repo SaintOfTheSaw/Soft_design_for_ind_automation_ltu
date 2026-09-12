@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="0de1b7ef-de2f-464f-a88d-8328c93f4b1e" Name="E_F_TRIG" Comment="Composite Function Block Type" Namespace="Main">
+  <Attribute Name="Configuration.FB.IDCounter" Value="20" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="lizar" Date="9/9/2026" Remarks="template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="EI" Comment="Initialization Request">
+        <With Var="QI" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="EO" Comment="Initialization Confirm" />
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="QI" Type="BOOL" Comment="Input event qualifier" />
+    </InputVars>
+  </InterfaceList>
+  <FBNetwork>
+    <FB ID="18" Name="FB1" Type="E_D_FF" x="1700" y="160" Namespace="IEC61499.Standard" />
+    <FB ID="19" Name="FB2" Type="E_PERMIT" x="2820" y="320" Namespace="IEC61499.Standard" />
+    <FB ID="20" Name="FB3" Type="NOT_42C76073DCEB1A7A" x="2340" y="340" Namespace="Main">
+      <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.Standard#CNT:=1;OUT${CNT}:BOOL" />
+    </FB>
+    <Input Name="EI" x="12.00001" y="12" Type="Event" />
+    <Input Name="QI" x="0" y="492" Type="Data" />
+    <Output Name="EO" x="3840" y="12" Type="Event" />
+    <EventConnections>
+      <Connection Source="EI" Destination="FB1.CLK" dx1="49.6875" />
+      <Connection Source="FB1.EO" Destination="FB3.REQ" dx1="45.35425" />
+      <Connection Source="FB3.CNF" Destination="FB2.EI" dx1="43.75" />
+      <Connection Source="FB2.EO" Destination="EO" dx1="47.16675" />
+    </EventConnections>
+    <DataConnections>
+      <Connection Source="QI" Destination="FB1.D" dx1="40" />
+      <Connection Source="FB1.Q" Destination="FB3.IN1" dx1="45.35425" />
+      <Connection Source="FB3.OUT1" Destination="FB2.PERMIT" dx1="71.875" />
+    </DataConnections>
+  </FBNetwork>
+</FBType>
