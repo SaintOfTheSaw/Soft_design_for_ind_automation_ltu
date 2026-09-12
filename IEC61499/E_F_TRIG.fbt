@@ -18,14 +18,14 @@
     </InputVars>
   </InterfaceList>
   <FBNetwork>
-    <FB ID="18" Name="FB1" Type="E_D_FF" x="1700" y="160" Namespace="IEC61499.Standard" />
-    <FB ID="19" Name="FB2" Type="E_PERMIT" x="2820" y="320" Namespace="IEC61499.Standard" />
-    <FB ID="20" Name="FB3" Type="NOT_42C76073DCEB1A7A" x="2340" y="340" Namespace="Main">
+    <FB ID="18" Name="FB1" Type="E_D_FF" x="580" y="160" Namespace="IEC61499.Standard" />
+    <FB ID="19" Name="FB2" Type="E_PERMIT" x="1700" y="320" Namespace="IEC61499.Standard" />
+    <FB ID="20" Name="FB3" Type="NOT_42C76073DCEB1A7A" x="1220" y="340" Namespace="Main">
       <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.Standard#CNT:=1;OUT${CNT}:BOOL" />
     </FB>
     <Input Name="EI" x="12.00001" y="12" Type="Event" />
     <Input Name="QI" x="0" y="492" Type="Data" />
-    <Output Name="EO" x="3840" y="12" Type="Event" />
+    <Output Name="EO" x="2180" y="312" Type="Event" />
     <EventConnections>
       <Connection Source="EI" Destination="FB1.CLK" dx1="49.6875" />
       <Connection Source="FB1.EO" Destination="FB3.REQ" dx1="45.35425" />

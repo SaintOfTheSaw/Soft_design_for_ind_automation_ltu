@@ -1,15 +1,16 @@
 {
   "snapshot": {
-    "guid": "179dad50-acfb-447c-b871-bfbeedf38534",
-    "hash": "01E135395FAD0884CDB523476975F2ABFFC8AB313A086EB42D6980838EC515B7",
+    "guid": "a76f5fdd-af74-4913-926b-fe638b690489",
+    "hash": "491AB0548D84CCF8974BA55F8A805CB62239D616BA657DE15528E2CF185D7903",
     "app": {
-      "hash": "01E135395FAD0884CDB523476975F2ABFFC8AB313A086EB42D6980838EC515B7",
+      "hash": "491AB0548D84CCF8974BA55F8A805CB62239D616BA657DE15528E2CF185D7903",
       "items": [
         "Main#E_RS.bin",
         "Main#TWO_I_TWO_O.bin",
         "Main#E_TRAIN.bin",
         "Main#NOT_42C76073DCEB1A7A.bin",
-        "Main#E_F_TRIG_2.bin",
+        "Main#E_F_TRIG.bin",
+        "Main#E_CTU.bin",
         "Device.bin"
       ]
     }

@@ -27,16 +27,13 @@
       <ECState Name="RESET" Comment="Normal execution" x="1277.647" y="700.9412">
         <ECAction Algorithm="A_RESET" Output="EO" />
       </ECState>
-      <ECTransition Source="START" Destination="SET" Condition="S" x="661.2904" y="294.1876">
+      <ECTransition Source="START" Destination="SET" Condition="S" x="661.3285" y="294.2401">
         <Attribute Name="Configuration.Transaction.BezierPoints" Value="152.3729,80.85372,187.9398,50.92533" />
       </ECTransition>
-      <ECTransition Source="START" Destination="RESET" Condition="R" x="808.6302" y="591.149">
-        <Attribute Name="Configuration.Transaction.BezierPoints" Value="173.9817,142.2655,231.0142,145.3764" />
-      </ECTransition>
-      <ECTransition Source="SET" Destination="RESET" Condition="R" x="1184.885" y="407.2906">
+      <ECTransition Source="SET" Destination="RESET" Condition="R" x="1185.208" y="407.2906">
         <Attribute Name="Configuration.Transaction.BezierPoints" Value="289.5059,80.77309,312.1724,120.5775" />
       </ECTransition>
-      <ECTransition Source="RESET" Destination="SET" Condition="S" x="1019.037" y="405.507">
+      <ECTransition Source="RESET" Destination="SET" Condition="S" x="1019.255" y="405.507">
         <Attribute Name="Configuration.Transaction.BezierPoints" Value="261.5949,119.5538,238.282,80.60769" />
       </ECTransition>
     </ECC>

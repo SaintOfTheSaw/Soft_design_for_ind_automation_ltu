@@ -57,7 +57,7 @@
     <None Include="IEC61499.iecproj" />
     <none Include="Languages\neutral\Dictionary.Resources.xml" />
     <None Include="Project.doc.xml" />
-    <None Include="SnapshotCompiles\{179DAD50-ACFB-447C-B871-BFBEEDF38534}\Default\IEC61499.snapshot" />
+    <None Include="SnapshotCompiles\{A76F5FDD-AF74-4913-926B-FE638B690489}\Default\IEC61499.snapshot" />
     <None Include="System\snapshot.xml">
       <DependentUpon>System.sys</DependentUpon>
     </None>
@@ -68,6 +68,9 @@
     <None Include="System\System.Device.Properties.xml">
       <DependentUpon>System.sys</DependentUpon>
       <IEC61499Type>System</IEC61499Type>
+    </None>
+    <None Include="System\System.opcuaclient.xml">
+      <DependentUpon>System.sys</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -96,8 +99,20 @@
     <Folder Include="License" />
     <Folder Include="Log" />
     <Folder Include="SnapshotCompiles" />
-    <Folder Include="SnapshotCompiles\{179DAD50-ACFB-447C-B871-BFBEEDF38534}" />
-    <Folder Include="SnapshotCompiles\{179DAD50-ACFB-447C-B871-BFBEEDF38534}\Default" />
+    <Folder Include="SnapshotCompiles\{A76F5FDD-AF74-4913-926B-FE638B690489}" />
+    <Folder Include="SnapshotCompiles\{A76F5FDD-AF74-4913-926B-FE638B690489}\Default" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="System\System.offline.xml">
+      <DependentUpon>System.sys</DependentUpon>
+      <Plugin>OfflineParametrizationEditor</Plugin>
+      <IEC61499Type>CAT_OFFLINE</IEC61499Type>
+    </Content>
+    <Content Include="System\System.opcua.xml">
+      <DependentUpon>System.sys</DependentUpon>
+      <Plugin>OPCUAConfigurator</Plugin>
+      <IEC61499Type>CAT_OPCUA</IEC61499Type>
+    </Content>
   </ItemGroup>
   <Import Project="$(SharpDevelopBinPath)\NxtControl.Build.61499.Targets" />
 </Project>

@@ -14,24 +14,39 @@
   </Application>
   <Application ID="CF3B75FD15C5EB30" Name="E_TRAIN_TEST">
     <SubAppNetwork>
-      <FB ID="4F7B0894AD15377D" Name="FB1" Type="E_TRAIN" x="940" y="160" Namespace="Main" />
-      <FB ID="269747DDC28F2B7C" Name="FB2" Type="E_TRAIN" x="980" y="700" Namespace="IEC61499.Standard" />
-      <FB ID="550005372FE8694A" Name="FB3" Type="E_F_TRIG" x="1880" y="240" Namespace="Main" />
+      <FB ID="4F7B0894AD15377D" Name="E_TRAIN_IMP" Type="E_TRAIN" x="940" y="160" Namespace="Main" />
+      <FB ID="269747DDC28F2B7C" Name="E_TRAIN" Type="E_TRAIN" x="980" y="700" Namespace="IEC61499.Standard" />
+      <FB ID="550005372FE8694A" Name="E_F_TRIG_IMP" Type="E_F_TRIG" x="1840" y="180" Namespace="Main" />
+      <FB ID="93F6709EDD14B15B" Name="E_F_TRIG" Type="E_F_TRIG" x="1840" y="720" Namespace="IEC61499.Standard" />
+      <FB ID="31795C6AA41BBD49" Name="E_CTU_IMP" Type="E_CTU" x="340" y="140" Namespace="Main" />
+      <FB ID="CD10A26A6C56DFC2" Name="E_CTU" Type="E_CTU" x="360" y="720" Namespace="IEC61499.Standard" />
+      <FB ID="8F8DEF05469536E5" Name="E_RS" Type="E_RS" x="2400" y="740" Namespace="IEC61499.Standard" />
+      <FB ID="61AC7327C6818803" Name="E_RS_IMP" Type="E_RS" x="2420" y="180" Namespace="Main" />
     </SubAppNetwork>
   </Application>
   <Device ID="8C9CA0E0-3439-4A44-9FD6-C215065DAF42" Name="EcoRT_0" Type="Soft_dPAC" x="700" y="700.0001" Namespace="SE.DPAC">
     <Resource ID="D8AEACB11A3836E8" Name="RES0" Type="EMB_RES_ECO" x="800" y="800" Namespace="Runtime.Management">
       <FBNetwork>
         <FB ID="98FF590A74C56FD8" Name="FB1" Type="E_RS" x="1260" y="380" Namespace="Main" />
-        <FB ID="C00F80BE11C49C5D" Name="FB0" Type="E_TRAIN" x="940" y="160" Namespace="Main" />
-        <FB ID="2BBEF21F4D91B26D" Name="FB2" Type="E_TRAIN" x="980" y="700" Namespace="IEC61499.Standard" />
-        <FB ID="C34AE408A0A87936" Name="FB3" Type="E_F_TRIG" x="1880" y="240" Namespace="Main" />
+        <FB ID="C00F80BE11C49C5D" Name="E_TRAIN_IMP" Type="E_TRAIN" x="940" y="160" Namespace="Main" />
+        <FB ID="2BBEF21F4D91B26D" Name="E_TRAIN" Type="E_TRAIN" x="980" y="700" Namespace="IEC61499.Standard" />
+        <FB ID="C34AE408A0A87936" Name="E_F_TRIG_IMP" Type="E_F_TRIG" x="1880" y="240" Namespace="Main" />
+        <FB ID="217C028FBB2B9E1E" Name="E_F_TRIG" Type="E_F_TRIG" x="1840" y="720" Namespace="IEC61499.Standard" />
+        <FB ID="F00D5E456D438D5E" Name="E_CTU_IMP" Type="E_CTU" x="340" y="140" Namespace="Main" />
+        <FB ID="EFCB38B72D95B5A1" Name="E_CTU" Type="E_CTU" x="360" y="720" Namespace="IEC61499.Standard" />
+        <FB ID="7765BBF54D55230A" Name="E_RS_IMP" Type="E_RS" x="2420" y="180" Namespace="Main" />
+        <FB ID="A2F8AA89B6BBC686" Name="E_RS" Type="E_RS" x="2400" y="740" Namespace="IEC61499.Standard" />
       </FBNetwork>
     </Resource>
     <FBNetwork />
   </Device>
   <Mapping From="APP1.FB1" To="EcoRT_0.RES0" />
-  <Mapping From="E_TRAIN_TEST.FB1" To="EcoRT_0.RES0.FB0" />
-  <Mapping From="E_TRAIN_TEST.FB2" To="EcoRT_0.RES0" />
-  <Mapping From="E_TRAIN_TEST.FB3" To="EcoRT_0.RES0" />
+  <Mapping From="E_TRAIN_TEST.E_TRAIN_IMP" To="EcoRT_0.RES0" />
+  <Mapping From="E_TRAIN_TEST.E_TRAIN" To="EcoRT_0.RES0" />
+  <Mapping From="E_TRAIN_TEST.E_F_TRIG_IMP" To="EcoRT_0.RES0" />
+  <Mapping From="E_TRAIN_TEST.E_F_TRIG" To="EcoRT_0.RES0" />
+  <Mapping From="E_TRAIN_TEST.E_CTU_IMP" To="EcoRT_0.RES0" />
+  <Mapping From="E_TRAIN_TEST.E_CTU" To="EcoRT_0.RES0" />
+  <Mapping From="E_TRAIN_TEST.E_RS_IMP" To="EcoRT_0.RES0" />
+  <Mapping From="E_TRAIN_TEST.E_RS" To="EcoRT_0.RES0" />
 </System>

@@ -38,25 +38,22 @@
       <ECState Name="RESET" Comment="Normal execution" x="1157.647" y="1228.941">
         <ECAction Algorithm="A_RESET" Output="RO" />
       </ECState>
-      <ECTransition Source="START" Destination="COUNT" Condition="CU" x="1808.064" y="656.2941">
+      <ECTransition Source="START" Destination="COUNT" Condition="CU" x="1808.329" y="662.8168">
         <Attribute Name="Configuration.Transaction.BezierPoints" Value="452.3466,182.3181,451.771,158.3289" />
       </ECTransition>
       <ECTransition Source="START" Destination="RESET" Condition="R" x="1539.34" y="1066.797">
         <Attribute Name="Configuration.Transaction.BezierPoints" Value="406.5014,256.9151,364.5154,285.8455" />
       </ECTransition>
-      <ECTransition Source="COUNT" Destination="RESET" Condition="R" x="1275.144" y="723.7896">
-        <Attribute Name="Configuration.Transaction.BezierPoints" Value="327.6947,141.2489,287.132,207.0027" />
-      </ECTransition>
-      <ECTransition Source="COUNT" Destination="COUNT" Condition="CU" x="1664.352" y="137.2486">
-        <Attribute Name="Configuration.Transaction.BezierPoints" Value="436,-25,382,61" />
-      </ECTransition>
       <ECTransition Source="RESET" Destination="COUNT" Condition="CU" x="1476.822" y="732.0588">
         <Attribute Name="Configuration.Transaction.BezierPoints" Value="346.564,207.573,393.7302,145.9564" />
+      </ECTransition>
+      <ECTransition Source="COUNT" Destination="START" Condition="1" x="1892.025" y="579.495">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="476.7638,132.7292,477.3394,156.7184" />
       </ECTransition>
     </ECC>
     <Algorithm Name="A_COUNT" Comment="Initialization algorithm">
       <ST><![CDATA[CV:=CV+1;
-CU:=FALSE;
+
 IF CV>=PV THEN
 	Q:=TRUE;
 ELSE
