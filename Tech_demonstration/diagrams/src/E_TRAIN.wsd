@@ -1,0 +1,57 @@
+@tartuml
+title E_TRAIN Timing Diagram
+' Removed the scale multiplier to keep it standard size
+
+binary "START" as Start
+binary "STOP" as Stop
+binary "EO" as EO
+
+
+@0
+Start is Low
+Stop is Low
+EO is Low
+
+
+
+@1
+Start is High
+@1.2
+Start is Low
+
+
+
+@2
+EO is High
+@2.2
+EO is Low
+
+
+@3
+EO is High
+@3.2
+EO is Low
+
+
+@4
+EO is High
+@4.2
+EO is Low
+
+@5
+Start is High
+@5.2
+Start is Low
+
+@6
+EO is High
+@6.2
+EO is Low
+
+@6.6
+Stop is High
+@6.8
+Stop is Low
+
+@enduml
+

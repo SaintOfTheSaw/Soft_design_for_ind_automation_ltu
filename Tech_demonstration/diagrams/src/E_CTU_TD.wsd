@@ -1,0 +1,94 @@
+@startuml
+title Increasing Counter Timing Diagram
+' Removed the scale multiplier to keep it standard size
+<style>
+timingDiagram {
+  
+  .blue {
+    LineColor blue
+    LineThickness 1
+  }
+}
+</style>
+
+
+
+binary "CU" as CU
+binary "R" as R
+robust "PV" as PV <<blue>>
+binary "Q" as Q
+robust "CV" as CV <<blue>>
+binary "RO" as RO
+binary "CUO" as CUO
+
+
+@0
+
+CU is Low
+R is Low
+PV is 2
+Q is Low
+CV is 0
+RO is Low
+CUO is Low
+
+
+@1
+CU is High
+
+
+@1.2
+CU is Low
+CV is 1
+CUO is High
+
+@1.4
+CUO is Low
+
+
+@2
+CU is High
+
+
+@2.2
+Q is High
+
+CU is Low
+CV is 2
+CUO is High
+
+@2.4
+CUO is Low
+
+
+
+@3
+CU is High
+
+
+@3.2
+
+
+CU is Low
+CV is 3
+CUO is High
+
+@3.4
+CUO is Low
+
+@4
+CU is Low
+R is High
+
+@4.2
+R is Low
+Q is Low
+RO is High
+CV is 0
+
+
+@4.4
+RO is Low
+
+
+@enduml

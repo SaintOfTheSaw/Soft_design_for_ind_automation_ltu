@@ -1,0 +1,48 @@
+@startuml
+title Falling Edge trigger Timing Diagram
+' Removed the scale multiplier to keep it standard size
+
+binary "EI" as EI
+binary "QI" as QI
+binary "EO" as EO
+
+
+@0
+EI is Low
+QI is Low
+EO is Low
+
+
+
+@1
+EI is High
+@1.2
+EI is Low
+@1.5
+QI is High
+
+@2
+EI is High
+@2.2
+EI is Low
+
+
+@3
+EI is High
+@3.2
+EI is Low
+@3.5
+QI is Low
+
+
+@4
+EI is High
+@4.2
+EI is Low
+EO is High
+@4.4
+EO is Low
+
+
+@enduml
+

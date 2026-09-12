@@ -1,0 +1,49 @@
+@startuml
+title RS Flip-Flop Timing Diagram
+' Removed the scale multiplier to keep it standard size
+
+binary "S" as S
+binary "R" as R
+binary "EO" as EO
+binary "Q" as Q
+
+@0
+S is Low
+R is Low
+EO is Low
+Q is Low
+
+
+@1
+S is High
+@1.2
+EO is High
+Q is High
+S is Low
+@1.4
+EO is Low
+
+
+@2
+S is High
+@2.2
+S is Low
+
+
+
+@3
+R is High
+@3.2
+R is Low
+EO is High
+@3.4
+EO is Low
+Q is Low
+
+
+@4
+R is High
+@4.2
+R is Low
+
+@enduml
