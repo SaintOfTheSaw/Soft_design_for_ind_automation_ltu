@@ -29,7 +29,7 @@ The block can be checked in Debug mode. The block works correctly and exactly as
 The library implements `E_RS` and `E_SR` with the same functionality; in this assignment, `E_RS` is implemented.
 The `E_RS` block shall set `Q` to TRUE when an event is triggered on the `S` input. `Q` should be reset to 0 when event `R` is triggered. An output event is triggered when the `Q` value is changed. The block must follow this timing diagram:
 
-![E_RS Timing Diagram](Tech_demonstration\diagrams\out\E_RS\E_RS.png)
+![E_RS Timing Diagram](Tech_demonstration/diagrams/out/E_RS/E_RS.png)
 
 **Implementation:**
 *   **Interface:** 
@@ -52,7 +52,7 @@ This section covers the purpose of the Composite Function Blocks, shows the Func
 **Requirements:**
 After the `START` event is triggered, the `EO` event shall be triggered `N` times every `delayTime` interval. After `N` times triggered `EO` or if a `STOP` event occurs, the block shall stop. The block must follow this timing diagram:
 
-![E_TRAIN Timing Diagram](Tech_demonstration\diagrams\out\E_TRAIN\E_TRAIN.png)
+![E_TRAIN Timing Diagram](Tech_demonstration/diagrams/out/E_TRAIN/E_TRAIN.png)
 
 > **Note:** The library-implemented E_Train also requires a STOP event after every START event.
 
@@ -75,7 +75,7 @@ We can check the block in the Application using the Watch function and running a
 **Requirements:**
 `EO` is triggered when a transition of `QI` from TRUE to FALSE is detected. If `QI` does not change, or changes from FALSE to TRUE, no `EO` is fired. The block must follow this timing diagram:
 
-![E_F_TRIG Timing Diagram](Tech_demonstration\diagrams\out\E_F_TRIG\E_F_TRIG.png)
+![E_F_TRIG Timing Diagram](Tech_demonstration/diagrams/out/E_F_TRIG/E_F_TRIG.png)
 
 **Implementation:**
 *   **Interface:** 
