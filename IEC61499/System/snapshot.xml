@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <baseline xmlns:xsd="http://www.nxtControl.com/Snapshot" xmlns="http://tempuri.org/XMLSchema1.xsd">
-  <snapshot guid="{59E883BD-4AF8-4002-991B-0DA73CB9AE11}" compiler="Default" created="2026-09-13T14:49:37" base="{00000000-0000-0000-0000-000000000000}">
+  <snapshot guid="{E7EDFBCA-546A-4A23-BBEE-5EB2418ABD14}" compiler="Default" created="2026-09-13T15:12:30" base="{00000000-0000-0000-0000-000000000000}">
     <DeployInformation Type="Working">
       <FileGroup Name="FileList" xmlns="http://tempuri.org/DeploySnapshot.xsd">
         <FileItem Name="Main#E_RS.bin" Library="IEC61499.dll" BuildSnapshot="{59E883BD-4AF8-4002-991B-0DA73CB9AE11}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
           <Modified>2026-09-13T14:49:34</Modified>
           <Hash>19DA756D2C560CD9</Hash>
         </FileItem>
-        <FileItem Name="Main#E_CTU.bin" Library="IEC61499.dll" BuildSnapshot="{59E883BD-4AF8-4002-991B-0DA73CB9AE11}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2026-09-13T14:49:34</Modified>
-          <Hash>21639F2CDF362C644</Hash>
+        <FileItem Name="Main#E_CTU.bin" Library="IEC61499.dll" BuildSnapshot="{E7EDFBCA-546A-4A23-BBEE-5EB2418ABD14}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-13T15:12:28</Modified>
+          <Hash>307E03322BFB5536</Hash>
         </FileItem>
         <FileItem Name="Main#E_TRAIN.bin" Library="IEC61499.dll" BuildSnapshot="{7FAA9F5C-0420-4423-A051-20005285576C}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
           <Modified>2026-09-10T16:11:43</Modified>
@@ -57,8 +57,7 @@
           <Hash>0E9F74FEA41FA80E43A9D87D93F6D31D470DE62A4EE16517EAB2078D57628919</Hash>
         </FileItem>
         <FileItem Name="Basics/Main#E_CTU.bin">
-          <Hash>6E980B987327880A76DD2D9566B4097D795ADEB7799F082E41E0BB626E898AF7</Hash>
-          <Changed>true</Changed>
+          <Hash>9B2B7C8E80804AB0019D3EEE43C9D111FF5F1392D7004EE4101F939977B1303B</Hash>
         </FileItem>
       </Device>
     </DeployInformation>
@@ -66,7 +65,7 @@
   <deployment>
     <network_profile name="(Local Test)">
       <device id="8C9CA0E0-3439-4A44-9FD6-C215065DAF42">
-        <sref snapshot="{59E883BD-4AF8-4002-991B-0DA73CB9AE11}" state="ACTIVE_MODIFIED" />
+        <sref snapshot="{E7EDFBCA-546A-4A23-BBEE-5EB2418ABD14}" state="ACTIVE" />
       </device>
     </network_profile>
   </deployment>

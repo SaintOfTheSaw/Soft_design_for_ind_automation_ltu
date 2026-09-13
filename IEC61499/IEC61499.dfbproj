@@ -57,7 +57,7 @@
     <None Include="IEC61499.iecproj" />
     <none Include="Languages\neutral\Dictionary.Resources.xml" />
     <None Include="Project.doc.xml" />
-    <None Include="SnapshotCompiles\{59E883BD-4AF8-4002-991B-0DA73CB9AE11}\Default\IEC61499.snapshot" />
+    <None Include="SnapshotCompiles\{E7EDFBCA-546A-4A23-BBEE-5EB2418ABD14}\Default\IEC61499.snapshot" />
     <None Include="System\snapshot.xml">
       <DependentUpon>System.sys</DependentUpon>
     </None>
@@ -99,8 +99,8 @@
     <Folder Include="License" />
     <Folder Include="Log" />
     <Folder Include="SnapshotCompiles" />
-    <Folder Include="SnapshotCompiles\{59E883BD-4AF8-4002-991B-0DA73CB9AE11}" />
-    <Folder Include="SnapshotCompiles\{59E883BD-4AF8-4002-991B-0DA73CB9AE11}\Default" />
+    <Folder Include="SnapshotCompiles\{E7EDFBCA-546A-4A23-BBEE-5EB2418ABD14}" />
+    <Folder Include="SnapshotCompiles\{E7EDFBCA-546A-4A23-BBEE-5EB2418ABD14}\Default" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="System\System.offline.xml">
