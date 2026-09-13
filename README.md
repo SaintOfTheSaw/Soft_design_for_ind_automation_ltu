@@ -88,3 +88,28 @@ We can check the block in the Application using the Watch function and running a
 
 **Testing, Verification, and Validation:**
 Checked in the Application using the Watch function and running a simulation of the network. The block works correctly as defined in the time diagram and successfully copies the behavior of the library block.
+
+
+## 4. Reflection
+
+During implementation, I faced some challenges. Firstly, I implemented the counter this way:
+
+<p align="center">
+  <img src="Tech_demonstration/Screenshots/CTU_wrong.png" width="500">
+  <br>
+  <i>Initial ECC Implementation</i>
+</p>
+
+**The Problem:** The first time the `CU` event is triggered, the counter counts twice. 
+
+**Attempted Solution:** Initially, I solved this by adding `CU:=0;` inside the algorithm. While it works in the simulation, practically it makes no sense. 
+
+**Final Solution:** To fix this properly, I changed the Execution Control Chart (ECC) by:
+* Removing the loop transition to the `COUNT` state.
+* Adding a `1` transition back to the `START` state.
+
+<p align="center">
+  <img src="Tech_demonstration/Screenshots/CTU.png" width="500">
+  <br>
+  <i>Corrected ECC Implementation</i>
+</p>
