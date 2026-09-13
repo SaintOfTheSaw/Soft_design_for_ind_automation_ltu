@@ -44,11 +44,11 @@
       <ECTransition Source="START" Destination="RESET" Condition="R" x="1539.34" y="1066.797">
         <Attribute Name="Configuration.Transaction.BezierPoints" Value="406.5014,256.9151,364.5154,285.8455" />
       </ECTransition>
-      <ECTransition Source="RESET" Destination="COUNT" Condition="CU" x="1476.822" y="732.0588">
-        <Attribute Name="Configuration.Transaction.BezierPoints" Value="346.564,207.573,393.7302,145.9564" />
-      </ECTransition>
-      <ECTransition Source="COUNT" Destination="START" Condition="1" x="1892.025" y="579.495">
+      <ECTransition Source="COUNT" Destination="START" Condition="1" x="1892.025" y="579.4949">
         <Attribute Name="Configuration.Transaction.BezierPoints" Value="476.7638,132.7292,477.3394,156.7184" />
+      </ECTransition>
+      <ECTransition Source="RESET" Destination="START" Condition="1" x="1475.051" y="926.1613">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="350.3305,240.2593,392.3165,211.3289" />
       </ECTransition>
     </ECC>
     <Algorithm Name="A_COUNT" Comment="Initialization algorithm">
