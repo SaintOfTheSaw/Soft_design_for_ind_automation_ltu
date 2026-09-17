@@ -1,0 +1,46 @@
+@startuml 
+title Elevator State Machine
+hide empty description
+
+
+
+
+
+state "Stopped" as Stop
+state "Going Up" as GU
+state "Going Down" as GD
+
+[*]-->Stop: init()
+Stop -left-> GU : doorsClosed()&\ncurrentFloor < targetFloor
+GU -right-> Stop : currentFloor == targetFloor
+
+Stop -right-> GD : doorsClosed()&\ncurrentFloor > targetFloor
+GD -left-> Stop : currentFloor == targetFloor
+
+
+state Stop{
+    State "Closed" as Closed
+    State "OpeningX" as O0
+    State "Opened" as Opened
+    State "Closing" as Closing
+    O0: DoorX :=true
+    
+
+   Closed-->O0:openDoorsX()
+   
+   O0-->Opened:NOT DoorClosedX()
+   
+   Opened-right->Closing: t>3s
+    Opened: set timer t
+
+   Closing-left->Closed: allClosed()
+
+   Closing:DoorX :=false\n
+    
+    
+
+}  
+
+
+
+@enduml

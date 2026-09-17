@@ -1,0 +1,143 @@
+@startuml
+title Elevator cabin move timing diagram
+' Removed the scale multiplier to keep it standard size
+<style>
+timingDiagram {
+  
+  .blue {
+    LineColor blue
+    LineThickness 1
+  }
+
+  .green {
+    LineColor green
+    LineThickness 2
+  }
+
+  .purple {
+    LineColor purple
+    LineThickness 2
+  }
+}
+</style>
+
+
+
+
+robust "targetFloor" as TG <<blue>>
+binary "atFloor2" as F2 <<green>>
+binary "atFloor1" as F1 <<green>>
+binary "atFloor0" as F0 <<green>>
+binary "up" as UP <<purple>>
+binary "down" as DOWN <<purple>>
+
+
+
+@0
+
+TG is 0
+F2 is Low
+F1 is Low
+F0 is High
+UP is Low
+DOWN is Low
+
+@1
+
+TG is 1
+F0 is Low
+UP is High
+
+@2
+
+F1 is High
+UP is Low
+
+@3
+
+TG is 2
+F1 is Low
+UP is High
+
+
+@4
+
+
+F2 is High
+UP is Low
+
+
+@5
+
+TG is 1
+F2 is Low
+F1 is Low
+F0 is Low
+DOWN is High
+
+
+@6
+
+F1 is High
+DOWN is Low
+
+
+@7
+
+TG is 0
+F1 is Low
+DOWN is High
+
+
+@8
+F0 is High
+DOWN is Low
+
+
+
+@9
+
+TG is 2
+F0 is Low
+UP is High
+
+
+@10
+
+F1 is High
+
+@11
+
+F1 is Low
+
+
+
+@12
+UP is Low
+F2 is High
+
+
+@13
+
+TG is 0
+F2 is Low
+DOWN is High
+
+@14
+
+F1 is High
+
+@15
+
+F1 is Low
+
+
+@16
+
+
+F0 is High
+DOWN is Low
+
+
+
+@enduml

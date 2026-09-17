@@ -1,0 +1,17 @@
+@startuml
+
+actor request as R
+participant queueManager as QM
+participant doors as D
+participant cabinMovementControl as CMC
+
+CMC -> D: openDoors()
+CMC -> D: closeDoors()
+CMC -> QM: destinationPointComplete()
+
+D -> CMC: allClosed()
+
+QM -> CMC: targetFloor()
+
+R -> QM: addRequest()
+@enduml
