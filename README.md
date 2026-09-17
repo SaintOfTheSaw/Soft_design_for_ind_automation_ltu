@@ -1,4 +1,4 @@
-md_content = """# Elevator Controller Requirements & Design
+# Elevator Controller Requirements & Design
 
 ## 1. Requirements
 
@@ -45,7 +45,7 @@ Design divided to 4 modules:
 Communication between modules is showed on sequence diagram:
 
 <p align="center">
-  <img src="../Documentation/diagrams/out/sequence_diagram.png" width="600">
+  <img src="/Documentation/diagrams/out/sequence_diagram.png" width="600">
   <br>
   <i>Figure 1: Timing diagram</i>
 </p> [cite: 4]
@@ -60,7 +60,7 @@ Communication between modules is showed on sequence diagram:
 To define key states of cabin control, timing diagram was created:
 
 <p align="center">
-  <img src="../Documentation/diagrams/out/timing_diagram_edit.png" width="800">
+  <img src="/Documentation/diagrams/out/timing_diagram_edit.png" width="800">
   <br>
   <i>Figure 2: Timing diagram</i>
 </p> [cite: 4]
@@ -70,7 +70,7 @@ Timing diagram shows all possible transitions [cite: 4]. Elevator behaviour can 
 State diagram shows transitions between these states and door operating logic:
 
 <p align="center">
-  <img src="../Documentation/diagrams/out/state_diagram.png" width="600">
+  <img src="/Documentation/diagrams/out/state_diagram.png" width="600">
   <br>
   <i>Figure 3: State diagram</i>
 </p> [cite: 4]
@@ -96,9 +96,3 @@ State diagram shows transitions between these states and door operating logic:
 | OF-03 | Turn OFF indicators when request is completed | Sequence Diagram – destinationPointComplete() [cite: 4] |
 | CI-01 | Clear all stored requests on initialization | State Diagram – init() [cite: 4] |
 | CI-02 | Start normal operation if no conflicting data | State Diagram – init() [cite: 4] |
-"""
-
-with open("README_requirements_clean.md", "w") as f:
-    f.write(md_content.replace("[cite: 4]", ""))
-    
-print("Clean README generated")
