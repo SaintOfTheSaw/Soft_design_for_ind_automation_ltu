@@ -7,20 +7,20 @@ This project focuses on engineering the control logic for a three-floor elevator
 Elevator Operation
 The elevator services three levels (Floor 0, Floor 1, and Floor 2). Users can request the elevator in two ways:
 
-*Pressing a floor call button located on any floor.
+* Pressing a floor call button located on any floor.
 
-*Pressing a destination button inside the elevator cabin.
+* Pressing a destination button inside the elevator cabin.
 
 Controller Responsibilities
 The implemented controller acts as the central brain of the automation system and is directly responsible for:
 
-*Managing and queuing pending user requests.
+* Managing and queuing pending user requests.
 
-*Determining when requests have been successfully completed.
+* Determining when requests have been successfully completed.
 
-*Controlling the request indicator lights for user feedback.
+* Controlling the request indicator lights for user feedback.
 
-*Coordinating safe elevator cabin movement and synchronized door operation.
+* Coordinating safe elevator cabin movement and synchronized door operation.
 
 ## 1. Requirements
 
