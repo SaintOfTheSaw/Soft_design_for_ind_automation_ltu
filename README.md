@@ -1,6 +1,6 @@
 # Elevator Controller Documentation
 
-### Descripyion
+### Description
 
 This project focuses on engineering the control logic for a three-floor elevator automation system. While the physical system and Human-Machine Interface (HMI) are pre-developed, the core objective is to design the controller that coordinates all system behavior, starting with requirement definition and logical design.
 
