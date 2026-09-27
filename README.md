@@ -66,7 +66,7 @@ Design divided to 3 modules:
 Communication between modules is showed on sequence diagram:
 
 <p align="center">
-  <img src="path/to/Figure_1_Sequence_diagram.png" width="600">
+  <img src="/Documentation/diagrams/out/sequence_diagram.png" width="600">
   <br>
   <i>Figure 1: Sequence diagram</i>
 </p>
@@ -74,7 +74,7 @@ Communication between modules is showed on sequence diagram:
 To define key states of cabin control, timing diagram was created:
 
 <p align="center">
-  <img src="path/to/Figure_2_Timing_diagram.png" width="800">
+  <img src="/Documentation/diagrams/out/timing_diagram_edit.png" width="800">
   <br>
   <i>Figure 2: Timing diagram</i>
 </p>
@@ -88,13 +88,13 @@ Timing diagram shows all possible transitions. Elevator behaviour can be divided
 State diagram shows transitions between these states and door operating logic
 
 <p align="center">
-  <img src="path/to/Figure_3_State_diagram.png" width="800">
+  <img src="/Documentation/diagrams/out/state_diagram.png" width="800">
   <br>
   <i>Figure 3: State diagram</i>
 </p>
 
 <p align="center">
-  <img src="path/to/Figure_4_Door_State_Machine.png" width="300">
+  <img src="/Documentation/diagrams/out/doorSM.png" width="300">
   <br>
   <i>Figure 4: State diagram of STOP state</i>
 </p>
@@ -108,7 +108,7 @@ Some helper blocks were created:
 ### currentFloor
 
 <p align="center">
-  <img src="path/to/currentFloor_block.png" width="600">
+  <img src="/Documentation/screenshots/currentFloor.png" width="600">
 </p>
 
 Algorithms set output to current floor value. For example for f0 :
@@ -117,14 +117,14 @@ Algorithms set output to current floor value. For example for f0 :
 ### allClosed
 
 <p align="center">
-  <img src="path/to/allClosed_block.png" width="400">
+  <img src="/Documentation/screenshots/allClosed.png" width="400">
 </p>
 
 ### Request panel + Queue Manager
 Request panel and Queue Manager are implemented in block LED_MANAGER
 
 <p align="center">
-  <img src="path/to/LED_MANAGER_block.png" width="400">
+  <img src="/Documentation/screenshots/led_manager_interface.png" width="400">
 </p>
 
 This composite function block consists of
@@ -134,7 +134,7 @@ Queue_manager
 **RS_LED modules**
 
 <p align="center">
-  <img src="path/to/RS_LED_block.png" width="400">
+  <img src="/Documentation/screenshots/RS_led.png" width="400">
 </p>
 
 This block sets or resets LEDs 
@@ -142,26 +142,26 @@ This block sets or resets LEDs
 **Queue Manager**
 
 <p align="center">
-  <img src="path/to/Queue_manager_block.png" width="400">
+  <img src="/Documentation/screenshots/queue_manager.png" width="400">
 </p>
 
 Queue_manager basic block creates queue. It stores internal value FloorsRequests in INT ARRAY[0..2]
 TRUE in FloorsRequests[i] means that is request for floor i. Manager decides next floor (targetFloor) by the current direction elevator moves. It loocks through the FloorsRequests in direction of move. If it reaches edge floor, it starts looking in other direction. If there are no requests it sets queueIsEmpty to True.
 
 <p align="center">
-  <img src="path/to/Queue_manager_state_machine.png" width="600">
+  <img src="/Documentation/screenshots/qm_sm.png" width="600">
 </p>
 
 ### CabinMovementControl
 
 <p align="center">
-  <img src="path/to/cabinMovementControl_block.png" width="400">
+  <img src="/Documentation/screenshots/CMC_Interface.png" width="400">
 </p>
 
 Is a basic function block that controls movement of cabin
 
 <p align="center">
-  <img src="path/to/cabinMovementControl_state_machine.png" width="600">
+  <img src="/Documentation/screenshots/CMC_SM.png" width="600">
 </p>
 
 If block in GOING_UP or GOING_DOWN and door would open, elevator will go to state STOP
@@ -169,7 +169,7 @@ If block in GOING_UP or GOING_DOWN and door would open, elevator will go to stat
 ### Door_manager
 
 <p align="center">
-  <img src="path/to/DOOR_MANAGER_block.png" width="400">
+  <img src="/Documentation/screenshots/DM_interface.png" width="400">
 </p>
 
 It consists of 
@@ -180,7 +180,7 @@ TIMER
 **Door_control**
 
 <p align="center">
-  <img src="path/to/Door_control_block.png" width="400">
+  <img src="/Documentation/screenshots/DC_Interface.png" width="400">
 </p>
 
 This composite block opens or closes the door. It consists of 3 RS_DOOR blocks
@@ -188,11 +188,11 @@ This composite block opens or closes the door. It consists of 3 RS_DOOR blocks
 **STOP_SM**
 
 <p align="center">
-  <img src="path/to/STOP_SM_block.png" width="400">
+  <img src="/Documentation/screenshots/stop_SM.png" width="400">
 </p>
 
 <p align="center">
-  <img src="path/to/STOP_SM_state_machine.png" width="600">
+  <img src="/Documentation/screenshots/Door_SM.png" width="600">
 </p>
 
 **TIMER**
@@ -200,7 +200,7 @@ This composite block opens or closes the door. It consists of 3 RS_DOOR blocks
 TIMER it used to count 3 second and also resets counting if button was pushed on the same floor as elevator currently stays
 
 <p align="center">
-  <img src="path/to/TIMER_logic.png" width="500">
+  <img src="/Documentation/screenshots/timer.png" width="500">
 </p>
 
 ---
