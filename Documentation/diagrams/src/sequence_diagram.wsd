@@ -1,17 +1,27 @@
 @startuml
 
-actor request as R
-participant queueManager as QM
+actor User as U
+participant request_n_queueManager as RQ
 participant doors as D
-participant cabinMovementControl as CMC
+participant cabinMovementControl as C
+participant PlantModel as PM
 
-CMC -> D: openDoors()
-CMC -> D: closeDoors()
-CMC -> QM: destinationPointComplete()
+U -> RQ : Button
+RQ -> C : targetFloor
+C -> PM : liftUp/liftDown
+C ->RQ : goingUp/Down
+PM -> C : currentFloor
 
-D -> CMC: allClosed()
+C -> PM : stop
+note left
+when targetFLoor = currentFloor
+end note
+C -> D : stop(start open the doors)
+D -> C : stopFinished
+D -> RQ : stopFinished
 
-QM -> CMC: targetFloor()
+RQ -> C : new targetFloor/QueueIsEmpty
 
-R -> QM: addRequest()
+
+
 @enduml

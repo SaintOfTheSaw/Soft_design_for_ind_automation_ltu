@@ -1,0 +1,28 @@
+@startuml 
+title Door State Machine
+hide empty description
+
+
+State "Start" as S
+State "Opening" as O
+State "Opened" as Opened
+State "Closing" as Closing
+State "Closed" as Closed
+
+S-->O: STOP
+
+
+O-->Opened: doorOpened & atFloor
+
+Opened-->Closing: TIMER
+
+
+Closing-->Closed: allClosed
+
+Closed --> S
+    
+    
+
+
+
+@enduml

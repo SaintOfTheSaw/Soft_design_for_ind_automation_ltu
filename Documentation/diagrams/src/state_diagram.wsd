@@ -6,40 +6,24 @@ hide empty description
 
 
 
-state "Stopped" as Stop
+state "Stop" as Stop
 state "Going Up" as GU
 state "Going Down" as GD
+state "Wait" as W
 
-[*]-->Stop: init()
-Stop -left-> GU : doorsClosed()&\ncurrentFloor < targetFloor
-GU -right-> Stop : currentFloor == targetFloor
+[*]-->Stop: doorsClosed
+Stop -left-> GU : doorsClosed()&\ncurrentFloor < targetFloor \n & stopFinished
+GU -right-> Stop : currentFloor == targetFloor OR &\n NOT doorsClosed
 
-Stop -right-> GD : doorsClosed()&\ncurrentFloor > targetFloor
-GD -left-> Stop : currentFloor == targetFloor
+Stop -right-> GD : doorsClosed()&\ncurrentFloor > targetFloor \n & stopFinished
+GD -left-> Stop : currentFloor == targetFloor OR &\n NOT doorsClosed
 
+Stop -down-> W : QueueIsEmpty
+W -up-> Stop : (currentFloor = targetFloor) & \n NOT QueueIsEmpty
 
-state Stop{
-    State "Closed" as Closed
-    State "OpeningX" as O0
-    State "Opened" as Opened
-    State "Closing" as Closing
-    O0: DoorX :=true
-    
+W--> GU : doorsClosed & (currentFloor<targetFloor) \n & (NOT QueueIsEmpty)
+W--> GD : doorsClosed & (currentFloor>targetFloor) \n & (NOT QueueIsEmpty)
 
-   Closed-->O0:openDoorsX()
-   
-   O0-->Opened:NOT DoorClosedX()
-   
-   Opened-right->Closing: t>3s
-    Opened: set timer t
-
-   Closing-left->Closed: allClosed()
-
-   Closing:DoorX :=false\n
-    
-    
-
-}  
 
 
 
