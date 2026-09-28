@@ -1,4 +1,4 @@
-@startuml 
+@startuml elevator_SM
 title Elevator State Machine
 hide empty description
 

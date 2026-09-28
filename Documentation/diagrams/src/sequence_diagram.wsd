@@ -1,4 +1,4 @@
-@startuml
+@startuml seq_diagram
 
 actor User as U
 participant request_n_queueManager as RQ
