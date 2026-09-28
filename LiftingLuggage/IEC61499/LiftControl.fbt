@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="301cda55-48c2-49ea-953b-90e642ec8fe3" Name="LiftControl" Comment="Basic Function Block Type" Namespace="Main">
+  <Identification Standard="61499-2" />
+  <VersionInfo Version="0.0" Author="midxav" Date="1/14/2024" Remarks="Template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="INIT" Comment="Initialization Request">
+        <With Var="LiftRetracted" />
+        <With Var="LiftExtended" />
+        <With Var="LuggageArrived" />
+        <With Var="LuggageLifted" />
+      </Event>
+      <Event Name="REQ" Comment="Normal Execution Request">
+        <With Var="LiftRetracted" />
+        <With Var="LiftExtended" />
+        <With Var="LuggageArrived" />
+        <With Var="LuggageLifted" />
+      </Event>
+      <Event Name="RETRACT" />
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="INITO" Comment="Initialization Confirm">
+        <With Var="ExtendLift" />
+        <With Var="RetractLift" />
+      </Event>
+      <Event Name="CNF" Comment="Execution Confirmation">
+        <With Var="ExtendLift" />
+        <With Var="RetractLift" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="LiftRetracted" Type="BOOL" Comment="Input event qualifier" />
+      <VarDeclaration Name="LiftExtended" Type="BOOL" />
+      <VarDeclaration Name="LuggageArrived" Type="BOOL" />
+      <VarDeclaration Name="LuggageLifted" Type="BOOL" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="ExtendLift" Type="BOOL" Comment="Output event qualifier" />
+      <VarDeclaration Name="RetractLift" Type="BOOL" />
+    </OutputVars>
+  </InterfaceList>
+  <BasicFB>
+    <Attribute Name="FBType.Basic.Algorithm.Order" Value="INIT,INITIAL,LIFTLUGGAGE,LUGGAGEPUSHED,LUGGAGELIFTED" />
+    <ECC>
+      <ECState Name="START" Comment="Initial State" x="3660.942" y="129.4117" />
+      <ECState Name="INIT" Comment="Initialization" x="3671.53" y="673.1764">
+        <ECAction Algorithm="INIT" Output="INITO" />
+      </ECState>
+      <ECState Name="INITIAL" x="3684" y="1356">
+        <ECAction Algorithm="INITIAL" Output="CNF" />
+      </ECState>
+      <ECState Name="LIFT_LUGGAGE" x="2964" y="2220">
+        <ECAction Algorithm="LIFTLUGGAGE" Output="CNF" />
+      </ECState>
+      <ECState Name="LUGGAGE_LIFTED" x="1660" y="2236">
+        <ECAction Algorithm="LUGGAGELIFTED" Output="CNF" />
+      </ECState>
+      <ECState Name="LUGGAGE_PUSHED" x="916" y="1368">
+        <ECAction Algorithm="LUGGAGEPUSHED" Output="CNF" />
+      </ECState>
+      <ECTransition Source="START" Destination="INIT" Condition="INIT" x="3676.952" y="388.6524">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="919.4792,77.79795,920.1906,114.4213" />
+      </ECTransition>
+      <ECTransition Source="INIT" Destination="INITIAL" Condition="REQ AND LiftRetracted" x="3685.196" y="1037.798">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="921.2473,237.1968,922.2729,285.5708" />
+      </ECTransition>
+      <ECTransition Source="INITIAL" Destination="LIFT_LUGGAGE" Condition="REQ AND LuggageArrived" x="3582.246" y="1863.566">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="937.0895,440.534,884.2115,503.8431" />
+      </ECTransition>
+      <ECTransition Source="LIFT_LUGGAGE" Destination="LUGGAGE_LIFTED" Condition="REQ AND LiftExtended AND LuggageLifted" x="2310.552" y="2518.731">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="610.6841,649.1547,544.1932,649.9688" />
+      </ECTransition>
+      <ECTransition Source="LUGGAGE_LIFTED" Destination="LUGGAGE_PUSHED" Condition="RETRACT" x="923.7125" y="1932.525">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="238.7601,525.4996,186.7818,462.5169" />
+      </ECTransition>
+      <ECTransition Source="LUGGAGE_PUSHED" Destination="INITIAL" Condition="REQ AND LiftRetracted" x="2295.816" y="1030.893">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="476.1765,234.8642,671.3502,234.095" />
+      </ECTransition>
+    </ECC>
+    <Algorithm Name="INIT">
+      <ST><![CDATA[ExtendLift:= FALSE;
+RetractLift:=TRUE;]]></ST>
+    </Algorithm>
+    <Algorithm Name="INITIAL">
+      <ST><![CDATA[RetractLift:=FALSE;]]></ST>
+    </Algorithm>
+    <Algorithm Name="LIFTLUGGAGE">
+      <ST><![CDATA[ExtendLift:=TRUE;]]></ST>
+    </Algorithm>
+    <Algorithm Name="LUGGAGELIFTED">
+      <ST><![CDATA[ExtendLift:=FALSE;]]></ST>
+    </Algorithm>
+    <Algorithm Name="LUGGAGEPUSHED">
+      <ST><![CDATA[RetractLift:=TRUE;]]></ST>
+    </Algorithm>
+  </BasicFB>
+</FBType>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType Name="CROSSCOMM_PEER_228F417525871BB3" Comment="Service Interface Function Block Type" Namespace="Main">
+  <Attribute Name="Runtime.FBType.ImplementingType" Value="Runtime.System#DYNGEN_CROSSCOMM_PEER" />
+  <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.System#&lt;InterfaceList&gt;&#xD;&#xA;  &lt;EventOutputs&gt;&#xD;&#xA;    &lt;Event Name=&quot;INITO&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;LiftRetracted&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LiftExtended&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LuggageArrived&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LuggageLifted&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;    &lt;Event Name=&quot;CNF&quot;&gt;&#xD;&#xA;      &lt;With Var=&quot;LiftRetracted&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LiftExtended&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LuggageArrived&quot; /&gt;&#xD;&#xA;      &lt;With Var=&quot;LuggageLifted&quot; /&gt;&#xD;&#xA;    &lt;/Event&gt;&#xD;&#xA;  &lt;/EventOutputs&gt;&#xD;&#xA;  &lt;OutputVars&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LiftRetracted&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LiftExtended&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LuggageArrived&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;    &lt;VarDeclaration Name=&quot;LuggageLifted&quot; Type=&quot;BOOL&quot; /&gt;&#xD;&#xA;  &lt;/OutputVars&gt;&#xD;&#xA;&lt;/InterfaceList&gt;" />
+  <Attribute Name="Configuration.FB.IDCounter" Value="0" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="nxtControl GmbH " Version="0.0" Author="bababen" Date="9/22/2017" Remarks="template" />
+  <CompilerInfo>
+    <Compiler Language="Cpp" Vendor="nxtControl" Product="builtin " Version="1.0" />
+  </CompilerInfo>
+  <InterfaceList>
+    <EventOutputs>
+      <Event Name="INITO">
+        <With Var="LiftRetracted" />
+        <With Var="LiftExtended" />
+        <With Var="LuggageArrived" />
+        <With Var="LuggageLifted" />
+      </Event>
+      <Event Name="CNF">
+        <With Var="LiftRetracted" />
+        <With Var="LiftExtended" />
+        <With Var="LuggageArrived" />
+        <With Var="LuggageLifted" />
+      </Event>
+    </EventOutputs>
+    <OutputVars>
+      <VarDeclaration Name="LiftRetracted" Type="BOOL" />
+      <VarDeclaration Name="LiftExtended" Type="BOOL" />
+      <VarDeclaration Name="LuggageArrived" Type="BOOL" />
+      <VarDeclaration Name="LuggageLifted" Type="BOOL" />
+    </OutputVars>
+  </InterfaceList>
+  <BasicFB>
+    <ECC>
+      <ECState Name="START" />
+    </ECC>
+  </BasicFB>
+</FBType>

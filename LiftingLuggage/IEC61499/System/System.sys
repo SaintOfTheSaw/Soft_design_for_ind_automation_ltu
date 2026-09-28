@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE System SYSTEM "../LibraryElement.dtd">
+<System Name="System" Comment="System Configuration">
+  <Attribute Name="System.Device.FolderPath" Value="DEV,LiftControlDEV,PusherControlDEV" />
+  <Identification Standard="61499-1" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="Sandeep Patil" Date="15/04/2020" />
+  <Application ID="A4ABD8400116F035" Name="LiftingLuggage">
+    <SubAppNetwork>
+      <FB ID="DFD43629BFCD4A5" Name="Model" Type="Model" x="1700" y="580" Namespace="Main" />
+      <FB ID="FDAAC859A2745F2A" Name="ControlPanel" Type="ControlPanel" x="180" y="160" Namespace="Main" />
+      <FB ID="7A52D6A32DBE4D96" Name="LiftControl" Type="LiftControl" x="3620" y="580" Namespace="Main" />
+      <FB ID="84AE69FC5D66198F" Name="PusherControl" Type="PusherControl" x="3600" y="1460" Namespace="Main" />
+      <EventConnections>
+        <Connection Source="Model.INITO" Destination="LiftControl.INIT" />
+        <Connection Source="Model.CNF" Destination="LiftControl.REQ" />
+        <Connection Source="Model.INITO" Destination="PusherControl.INIT" dx1="189.6042" />
+        <Connection Source="LiftControl.INITO" Destination="Model.INIT" dx1="40" dx2="30" dy="-110" />
+        <Connection Source="LiftControl.CNF" Destination="Model.REQ" dx1="103.8125" dx2="220" dy="-380">
+          <AvoidsNodes>false</AvoidsNodes>
+        </Connection>
+        <Connection Source="PusherControl.INITO" Destination="Model.INIT" dx1="171.8125" dx2="120" dy="-1160">
+          <AvoidsNodes>false</AvoidsNodes>
+        </Connection>
+        <Connection Source="PusherControl.CNF" Destination="Model.REQ" dx1="251.8125" dx2="260" dy="-1340">
+          <AvoidsNodes>false</AvoidsNodes>
+        </Connection>
+        <Connection Source="Model.CNF" Destination="PusherControl.REQ" dx1="169.6042" />
+        <Connection Source="PusherControl.PUSHED" Destination="LiftControl.RETRACT" dx1="90" dx2="110" dy="-230" />
+      </EventConnections>
+      <DataConnections>
+        <Connection Source="Model.LiftRetracted" Destination="LiftControl.LiftRetracted" dx1="149.6042" />
+        <Connection Source="Model.LiftExtended" Destination="LiftControl.LiftExtended" dx1="129.6042" />
+        <Connection Source="Model.PushRetracted" Destination="PusherControl.PusherRetracted" dx1="1059.604">
+          <AvoidsNodes>false</AvoidsNodes>
+        </Connection>
+        <Connection Source="Model.PushExtended" Destination="PusherControl.PusherExtended" dx1="89.60425" />
+        <Connection Source="PusherControl.ExtendPusher" Destination="Model.PushExt" dx1="90" dx2="30" dy="500">
+          <AvoidsNodes>false</AvoidsNodes>
+        </Connection>
+        <Connection Source="LiftControl.ExtendLift" Destination="Model.LiftExt" dx1="143.8125" dx2="100" dy="400">
+          <AvoidsNodes>false</AvoidsNodes>
+        </Connection>
+        <Connection Source="LiftControl.RetractLift" Destination="Model.LiftRet" dx1="113.8125" dx2="50" dy="270" />
+        <Connection Source="Model.LuggageArrived" Destination="LiftControl.LuggageArrived" dx1="170" />
+        <Connection Source="Model.LuggageLifted" Destination="LiftControl.LuggageLifted" dx1="190" />
+        <Connection Source="Model.LuggageArrived" Destination="PusherControl.LuggageArrived" dx1="69.60425" />
+        <Connection Source="Model.LuggageLifted" Destination="PusherControl.LuggageLifted" dx1="49.60425" />
+      </DataConnections>
+    </SubAppNetwork>
+  </Application>
+  <Device ID="8e25662b-7163-43d9-a62e-5110e1ee3534" Name="DEV" Type="Soft_dPAC" x="515.4479" y="459.8542" Namespace="SE.DPAC">
+    <Resource ID="189B9269FE2737C" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
+      <FBNetwork>
+        <FB ID="74C4D3A3E103F1D1" Name="Model" Type="Model" x="2420" y="480" Namespace="Main" />
+        <FB ID="8EF24B9F411F43DA" Name="CHAN_LiftControlDEV_RES0" Type="COMM_CHANN_DESC" x="500" y="300" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51300" />
+          <Parameter Name="PEERNAME" Value="'LiftControlDEV.RES0'" />
+        </FB>
+        <FB ID="93696C53150B6647" Name="CHAN_PusherControlDEV_RES0" Type="COMM_CHANN_DESC" x="1900" y="300" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51301" />
+          <Parameter Name="PEERNAME" Value="'PusherControlDEV.RES0'" />
+        </FB>
+        <EventConnections>
+          <Connection Source="START.COLD" Destination="Model.INIT" dx1="48.60425" />
+        </EventConnections>
+      </FBNetwork>
+    </Resource>
+    <FBNetwork />
+  </Device>
+  <Device ID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e" Name="LiftControlDEV" Type="Soft_dPAC" x="555.4479" y="1039.854" Namespace="SE.DPAC">
+    <Resource ID="BFE98C09D52D13D7" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
+      <FBNetwork>
+        <FB ID="DC35998B8E53021B" Name="LiftControl" Type="LiftControl" x="3620" y="580" Namespace="Main" />
+        <FB ID="74086308E425A255" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" x="500" y="300" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51302" />
+          <Parameter Name="PEERNAME" Value="'DEV.RES0'" />
+        </FB>
+        <FB ID="C117D9E0A2904543" Name="CHAN_PusherControlDEV_RES0" Type="COMM_CHANN_DESC" x="1900" y="300" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51303" />
+          <Parameter Name="PEERNAME" Value="'PusherControlDEV.RES0'" />
+        </FB>
+        <EventConnections>
+          <Connection Source="START.COLD" Destination="LiftControl.INIT" dx1="48.60419" />
+        </EventConnections>
+      </FBNetwork>
+    </Resource>
+    <FBNetwork />
+  </Device>
+  <Device ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" Name="PusherControlDEV" Type="Soft_dPAC" x="555.4479" y="1619.854" Namespace="SE.DPAC">
+    <Resource ID="F4D5DF7CD07DEA" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
+      <FBNetwork>
+        <FB ID="3F546C369396E15D" Name="PusherControl" Type="PusherControl" x="3600" y="1460" Namespace="Main" />
+        <FB ID="6B01B5A1FEFBE3C" Name="CHAN_DEV_RES0" Type="COMM_CHANN_DESC" x="500" y="300" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51304" />
+          <Parameter Name="PEERNAME" Value="'DEV.RES0'" />
+        </FB>
+        <FB ID="28D6BD2C325A3758" Name="CHAN_LiftControlDEV_RES0" Type="COMM_CHANN_DESC" x="1900" y="300" Namespace="Runtime.System">
+          <Attribute Name="Endpoint.Port" Value="51305" />
+          <Parameter Name="PEERNAME" Value="'LiftControlDEV.RES0'" />
+        </FB>
+        <EventConnections>
+          <Connection Source="START.COLD" Destination="PusherControl.INIT" dx1="48.60419" />
+        </EventConnections>
+      </FBNetwork>
+    </Resource>
+    <FBNetwork />
+  </Device>
+  <Mapping From="LiftingLuggage.Model" To="DEV.RES0" />
+  <Mapping From="LiftingLuggage.LiftControl" To="LiftControlDEV.RES0" />
+  <Mapping From="LiftingLuggage.PusherControl" To="PusherControlDEV.RES0" />
+</System>

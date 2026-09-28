@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="a4d67291-072b-4087-8381-fa86388d42ac" Name="PusherControl" Comment="Basic Function Block Type" Namespace="Main">
+  <Identification Standard="61499-2" />
+  <VersionInfo Version="0.0" Author="midxav" Date="1/14/2024" Remarks="Template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="INIT" Comment="Initialization Request">
+        <With Var="PusherRetracted" />
+        <With Var="PusherExtended" />
+        <With Var="LuggageArrived" />
+        <With Var="LuggageLifted" />
+      </Event>
+      <Event Name="REQ" Comment="Normal Execution Request">
+        <With Var="PusherRetracted" />
+        <With Var="PusherExtended" />
+        <With Var="LuggageArrived" />
+        <With Var="LuggageLifted" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="INITO" Comment="Initialization Confirm">
+        <With Var="ExtendPusher" />
+      </Event>
+      <Event Name="CNF" Comment="Execution Confirmation">
+        <With Var="ExtendPusher" />
+      </Event>
+      <Event Name="PUSHED" />
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="PusherRetracted" Type="BOOL" />
+      <VarDeclaration Name="PusherExtended" Type="BOOL" />
+      <VarDeclaration Name="LuggageArrived" Type="BOOL" />
+      <VarDeclaration Name="LuggageLifted" Type="BOOL" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="ExtendPusher" Type="BOOL" />
+    </OutputVars>
+  </InterfaceList>
+  <BasicFB>
+    <Attribute Name="FBType.Basic.Algorithm.Order" Value="INIT,PUSHLUGGAGE,LUGGAGEPUSHED" />
+    <ECC>
+      <ECState Name="START" Comment="Initial State" x="3680.942" y="129.4117" />
+      <ECState Name="INIT" Comment="Initialization" x="3671.53" y="673.1764">
+        <ECAction Algorithm="INIT" Output="INITO" />
+      </ECState>
+      <ECState Name="INITIAL" x="3680" y="1284" />
+      <ECState Name="PUSH_LUGGAGE" x="2612" y="2160">
+        <ECAction Algorithm="PUSHLUGGAGE" Output="CNF" />
+      </ECState>
+      <ECState Name="LUGGAGE_PUSHED" x="916" y="1368">
+        <ECAction Algorithm="LUGGAGEPUSHED" Output="CNF" />
+        <ECAction Output="PUSHED" />
+      </ECState>
+      <ECTransition Source="START" Destination="INIT" Condition="INIT" x="3687.944" y="388.9441">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="922.9851,77.89481,922.3171,114.5189" />
+      </ECTransition>
+      <ECTransition Source="INIT" Destination="INITIAL" Condition="REQ AND PusherRetracted" x="3683.728" y="998.9146">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="921.0218,230.246,921.7883,272.599" />
+      </ECTransition>
+      <ECTransition Source="PUSH_LUGGAGE" Destination="LUGGAGE_PUSHED" Condition="REQ AND PusherExtended" x="1519.296" y="2015.2">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="434.9103,551.1633,303.6912,492.8341" />
+      </ECTransition>
+      <ECTransition Source="LUGGAGE_PUSHED" Destination="INITIAL" Condition="REQ AND PusherRetracted" x="2277.505" y="995.4508">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="471.0869,228.7711,665.9851,222.4899" />
+      </ECTransition>
+      <ECTransition Source="INITIAL" Destination="PUSH_LUGGAGE" Condition="REQ AND LuggageLifted" x="3200.656" y="1779.989">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="841.553,417.6781,763.1563,481.9811" />
+      </ECTransition>
+    </ECC>
+    <Algorithm Name="INIT" Comment="Initialization algorithm">
+      <ST><![CDATA[ExtendPusher:= FALSE;]]></ST>
+    </Algorithm>
+    <Algorithm Name="PUSHLUGGAGE">
+      <ST><![CDATA[ExtendPusher:=TRUE;]]></ST>
+    </Algorithm>
+    <Algorithm Name="LUGGAGEPUSHED">
+      <ST><![CDATA[ExtendPusher:=FALSE;]]></ST>
+    </Algorithm>
+  </BasicFB>
+</FBType>
