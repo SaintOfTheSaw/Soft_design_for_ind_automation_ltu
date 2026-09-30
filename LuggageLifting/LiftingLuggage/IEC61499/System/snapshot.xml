@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<baseline xmlns:xsd="http://www.nxtControl.com/Snapshot" xmlns="http://tempuri.org/XMLSchema1.xsd">
+  <snapshot guid="{BA4B3CF0-F1B6-497A-B27B-5CDBA8056021}" compiler="Default" created="2026-09-30T19:59:42" base="{00000000-0000-0000-0000-000000000000}">
+    <DeployInformation Type="Working">
+      <FileGroup Name="FileList" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Main#CentralController.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>1193D19CAA863DFB2</Hash>
+        </FileItem>
+        <FileItem Name="Main#ChangeDetect.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>925AD117C6C4CAFE</Hash>
+        </FileItem>
+        <FileItem Name="Main#ControlPanel_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>186E748559AE6736A</Hash>
+        </FileItem>
+        <FileItem Name="Main#ControlPanel.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>971C43930174A94E</Hash>
+        </FileItem>
+        <FileItem Name="Main#ValveControlSR.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>1471F83F57873B36</Hash>
+        </FileItem>
+        <FileItem Name="Main#Sensor_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>241458BB2620E6531</Hash>
+        </FileItem>
+        <FileItem Name="Main#InRange.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>326E860C0934176B</Hash>
+        </FileItem>
+        <FileItem Name="Main#Sensor.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>153D7828BDD8900F5</Hash>
+        </FileItem>
+        <FileItem Name="Main#integEC.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>862BFD3D70623F5</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderH_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>78C1004DDE79ADFF</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderH.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>2035F908C188CEAFF</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderHSens.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>7736C6F44DB554D6</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderHSensValve_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>179F1CFF4411EE865</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderHSensValve.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>226736F0E8DF79DFB</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderHSens_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>2359A0105C3569539</Hash>
+        </FileItem>
+        <FileItem Name="Main#ValveControlDA.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>203403E76CA2AC758</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderV_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>174DF7C674FB7379C</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderV.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>188E7A8701EEFA235</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderVSens.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>1060B75C5072136CF</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderVSensValve_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>136FB40585587C8F</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderVSensValve.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>50EFBA5935673E2C</Hash>
+        </FileItem>
+        <FileItem Name="Main#CylinderVSens_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:28</Modified>
+          <Hash>1147BACC28D35C9B6</Hash>
+        </FileItem>
+        <FileItem Name="Main#LiftControl.bin" Library="IEC61499.dll" BuildSnapshot="{376AAF3C-789B-4AAA-999E-718041E6ABE7}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:08:34</Modified>
+          <Hash>5832E303F8E8ABE2</Hash>
+        </FileItem>
+        <FileItem Name="Main#LuggageMove.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:30</Modified>
+          <Hash>133490365F4CE2895</Hash>
+        </FileItem>
+        <FileItem Name="Main#Luggage_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:30</Modified>
+          <Hash>1038710983DA79144</Hash>
+        </FileItem>
+        <FileItem Name="Main#Luggage.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:30</Modified>
+          <Hash>213BD5AF4A9BDB5D4</Hash>
+        </FileItem>
+        <FileItem Name="Main#Model_HMI.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:30</Modified>
+          <Hash>61E1EA71860C2AFE</Hash>
+        </FileItem>
+        <FileItem Name="Main#Model.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:30</Modified>
+          <Hash>20018FC7A4C413EEE</Hash>
+        </FileItem>
+        <FileItem Name="Main#PusherControl.bin" Library="IEC61499.dll" BuildSnapshot="{376AAF3C-789B-4AAA-999E-718041E6ABE7}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:08:34</Modified>
+          <Hash>4602C817FEE4EB6E</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_16697678DCF9C13D3.bin" Library="IEC61499.dll" BuildSnapshot="{91C5D23F-0529-4BB1-A18A-6590E144BA67}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-29T21:15:48</Modified>
+          <Hash>16697678DCF9C13D3</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_193885F990D627368.bin" Library="IEC61499.dll" BuildSnapshot="{91C5D23F-0529-4BB1-A18A-6590E144BA67}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-29T21:15:48</Modified>
+          <Hash>193885F990D627368</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_195C19FF067434822.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:30</Modified>
+          <Hash>195C19FF067434822</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_124AAD7831CB0FFC2.bin" Library="IEC61499.dll" BuildSnapshot="{91C5D23F-0529-4BB1-A18A-6590E144BA67}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-29T21:15:48</Modified>
+          <Hash>124AAD7831CB0FFC2</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_170105447A58F8A97.bin" Library="IEC61499.dll" BuildSnapshot="{91C5D23F-0529-4BB1-A18A-6590E144BA67}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-29T21:15:48</Modified>
+          <Hash>170105447A58F8A97</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:30</Modified>
+          <Hash>45FE03D7848F2EB2</Hash>
+        </FileItem>
+        <FileItem Name="Main#OPCUA_CONNECT_13434D741E95123C0.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:30</Modified>
+          <Hash>13434D741E95123C0</Hash>
+        </FileItem>
+        <FileItem Name="Main#OPCUA_READ_17210D0FAA2FB8D01.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:30</Modified>
+          <Hash>17210D0FAA2FB8D01</Hash>
+        </FileItem>
+        <FileItem Name="Main#OPCUA_WRITE_1322467A4CC663E9C.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:30</Modified>
+          <Hash>1322467A4CC663E9C</Hash>
+        </FileItem>
+        <FileItem Name="Main#OPCUA_WRITE_247815A92EEC3FB0E.bin" Library="IEC61499.dll" BuildSnapshot="{5E3BD431-E21E-464A-8343-3DE0DDCDD0CA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T00:11:30</Modified>
+          <Hash>247815A92EEC3FB0E</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_2231FBBF01C66029F.bin" Library="IEC61499.dll" BuildSnapshot="{A4DDD052-A813-4192-993F-15CCE8EFE4F8}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T10:58:42</Modified>
+          <Hash>2231FBBF01C66029F</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_23210AE13D3409537.bin" Library="IEC61499.dll" BuildSnapshot="{A4DDD052-A813-4192-993F-15CCE8EFE4F8}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T10:58:42</Modified>
+          <Hash>23210AE13D3409537</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_24033E6A3137EF108.bin" Library="IEC61499.dll" BuildSnapshot="{A4DDD052-A813-4192-993F-15CCE8EFE4F8}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T10:58:42</Modified>
+          <Hash>24033E6A3137EF108</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_102194831F259FFBC.bin" Library="IEC61499.dll" BuildSnapshot="{A4DDD052-A813-4192-993F-15CCE8EFE4F8}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T10:58:42</Modified>
+          <Hash>102194831F259FFBC</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_1126B6AB0CC847A6.bin" Library="IEC61499.dll" BuildSnapshot="{A4DDD052-A813-4192-993F-15CCE8EFE4F8}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T10:58:42</Modified>
+          <Hash>1126B6AB0CC847A6</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_79D20A127EBE2117.bin" Library="IEC61499.dll" BuildSnapshot="{A4DDD052-A813-4192-993F-15CCE8EFE4F8}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T10:58:42</Modified>
+          <Hash>79D20A127EBE2117</Hash>
+        </FileItem>
+        <FileItem Name="Main#Master.bin" Library="IEC61499.dll" BuildSnapshot="{BA4B3CF0-F1B6-497A-B27B-5CDBA8056021}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T19:59:38</Modified>
+          <Hash>20088CB65A8F888A1</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_24EBE21AE52A465D.bin" Library="IEC61499.dll" BuildSnapshot="{23063316-B048-462F-A49F-2D2736EBB156}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:43:32</Modified>
+          <Hash>24EBE21AE52A465D</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_96076B73045C1761.bin" Library="IEC61499.dll" BuildSnapshot="{376AAF3C-789B-4AAA-999E-718041E6ABE7}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:08:34</Modified>
+          <Hash>96076B73045C1761</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_209BB7FF9E1CBD715.bin" Library="IEC61499.dll" BuildSnapshot="{376AAF3C-789B-4AAA-999E-718041E6ABE7}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:08:34</Modified>
+          <Hash>209BB7FF9E1CBD715</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_71FC4A2A5327CB09.bin" Library="IEC61499.dll" BuildSnapshot="{376AAF3C-789B-4AAA-999E-718041E6ABE7}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:08:34</Modified>
+          <Hash>71FC4A2A5327CB09</Hash>
+        </FileItem>
+        <FileItem Name="Main#OPCUA_READ_16655FD1AB9280ACD.bin" Library="IEC61499.dll" BuildSnapshot="{376AAF3C-789B-4AAA-999E-718041E6ABE7}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:08:34</Modified>
+          <Hash>16655FD1AB9280ACD</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_239285CDFC5570564.bin" Library="IEC61499.dll" BuildSnapshot="{23063316-B048-462F-A49F-2D2736EBB156}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:43:32</Modified>
+          <Hash>239285CDFC5570564</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_PEER_95DB6A67BB25D107.bin" Library="IEC61499.dll" BuildSnapshot="{23063316-B048-462F-A49F-2D2736EBB156}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:43:32</Modified>
+          <Hash>95DB6A67BB25D107</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_11979BD604A4D38A2.bin" Library="IEC61499.dll" BuildSnapshot="{23063316-B048-462F-A49F-2D2736EBB156}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:43:32</Modified>
+          <Hash>11979BD604A4D38A2</Hash>
+        </FileItem>
+        <FileItem Name="Main#CROSSCOMM_SENDER_2468F13B453622E42.bin" Library="IEC61499.dll" BuildSnapshot="{23063316-B048-462F-A49F-2D2736EBB156}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:43:32</Modified>
+          <Hash>2468F13B453622E42</Hash>
+        </FileItem>
+        <FileItem Name="Main#OPCUA_READ_1322467A4CC663E9C.bin" Library="IEC61499.dll" BuildSnapshot="{23063316-B048-462F-A49F-2D2736EBB156}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2026-09-30T16:43:32</Modified>
+          <Hash>1322467A4CC663E9C</Hash>
+        </FileItem>
+        <LibraryItem Name="Runtime.Base" Version="23.0.0.15" />
+        <LibraryItem Name="SE.DPAC" Version="23.0.0.57" />
+        <LibraryItem Name="SE.Standard" Version="23.0.0.14" />
+        <LibraryItem Name="Standard.OPCUAClient" Version="23.0.0.6" />
+        <DeviceItem ID="8e25662b-7163-43d9-a62e-5110e1ee3534" Hash="14887A19640ECD78A" />
+        <DeviceItem ID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e" Hash="335486FEE4AE366D" />
+        <DeviceItem ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" Hash="178DF4FBD676AF8EC" />
+        <DeviceItem ID="40cee2d3-88ee-406f-a466-cec3f22e5fe6" Hash="707E2EE13BE4A701" />
+      </FileGroup>
+      <Device Name="DEV" ID="8e25662b-7163-43d9-a62e-5110e1ee3534" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Basics/Main#ValveControlDA.bin">
+          <Hash>B2501CE1793314B11A09BFC20CE2D6DD76BF96F255074D17CA2081F6A42AAAF4</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#Sensor_HMI.bin">
+          <Hash>4264D5FCE1ED511C2705A5D88BA167B42A340BCF15A4B48EA9A26E62C9396062</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#InRange.bin">
+          <Hash>0EB699E535F93DEC8F287CB8FB68807872782A22157F9203CF9FAB4EF73B69AD</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#Sensor.bin">
+          <Hash>587D82D0904C9E960F8DB3803A88C13927E97841177C81D121F5808188DD7547</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#integEC.bin">
+          <Hash>B0D4E92A3DCD1D9D8FB63DD96F1F33B085A44FB45534FFAA1E5545CF6FEF824A</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#CylinderV_HMI.bin">
+          <Hash>6EFDA414C43508859754746663D1150659DEC9D4A4D1E3F7C107C5B33A2BC264</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#ChangeDetect.bin">
+          <Hash>43AD10635B6B2AA004B355CAC3145F9B357B820ABCEB1E67BD620D1D37D5E68A</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#CylinderV.bin">
+          <Hash>775F4D43D707406B8A1A4F76BB1E380B4AF304385A9D986558D0A89830E6E3FB</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#CylinderVSens.bin">
+          <Hash>2BAE42749E6037E58E4589544B30D0E3491782F2036E15976FB89502A22C99DA</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#CylinderVSensValve_HMI.bin">
+          <Hash>47F449499BA1CA6AD4639C72622CA80F753BE47E8D7F8852BDD619657FCCC401</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#CylinderVSensValve.bin">
+          <Hash>51551374710690CE5C3892FFAFF59E538F6C20EBB06F705AD49F8AA72DDF9414</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#ValveControlSR.bin">
+          <Hash>71B016C13D0BF345C0D14563F95301B97806A8E278D24A91139595C286DE1155</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#CylinderH_HMI.bin">
+          <Hash>02084F12CADA96FCBAE2AA465DFF1684B403B784BB05ECE3EC4347BC4B0E8015</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#CylinderH.bin">
+          <Hash>3B07CC0274CBD00E928BC58A7513315ABAB024617D80FC3251E3783D350D7CA6</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#CylinderHSens.bin">
+          <Hash>C32AA6ECE1F0CEBB4B45F5CA1135B3786CCC54B846DA9F821C418A96761AC762</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#CylinderHSensValve_HMI.bin">
+          <Hash>EA16E13379D883B45A094596AAAD124DD2572825344EDD44C3A476439CB1569D</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#CylinderHSensValve.bin">
+          <Hash>1EA830F1C57C35EE49145A611132EBCC7E48991C8EEFC53FDFE897358E264FA7</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#Model_HMI.bin">
+          <Hash>42DE64435F4F7A99E19A92278FA000E3AB45E4FFB68DB589ECAE835B9DB80AEF</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#Luggage_HMI.bin">
+          <Hash>D2228CB122DCCB26F8E721BC985A10088DF9C8D8C85EB6903374E46A5BFDC2A0</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#LuggageMove.bin">
+          <Hash>3E496AF7B364BFF6BA443B3498CCA0A130A10A6F8E871CACD809BC57CA4A564D</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#Luggage.bin">
+          <Hash>8A2617F5892696F9123863EBD1906C66CB59079143AB9C9A1E5B53C5895DF215</Hash>
+        </FileItem>
+        <FileItem Name="Composites/Main#Model.bin">
+          <Hash>6E37C42A906B88EE9989FA4ABFC0C4B42D38E78B68CCBB3223892B517075D45D</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
+          <Hash>876A693A4FD1F50FB4862ACB8A4D3132B066F30272A754E6BFCD960F0DB90A78</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin">
+          <Hash>3AAD2E795712A152A452AC1EBB9CA7402B8D9CCC7AC0A77BFC80ACA976A79E90</Hash>
+        </FileItem>
+      </Device>
+      <Device Name="LiftControlDEV" ID="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Basics/Main#LiftControl.bin">
+          <Hash>5576A2E51B57558369C64DCF3F43C5C56C180D537884099A7036D65CA6954FE4</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin">
+          <Hash>F925A6CE5FBEE265D5C52B4FCFA119FF9354FECDFF098AD10E5A124EEE19C1B9</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_READ_17210D0FAA2FB8D01.bin">
+          <Hash>CDCC9CA717E1348A5766155834DFCBB49DA344A5B39CB88F51921ADE07BC02F1</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_WRITE_1322467A4CC663E9C.bin">
+          <Hash>5C4A29979A96642D6F4E450E3233D3794ABF9A56BE77473EF98A903AB46A6DF5</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_96076B73045C1761.bin">
+          <Hash>FF3857F0653654F21F345F3268140140AD928085178FBC991E512F2810E0F3AE</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin">
+          <Hash>3AAD2E795712A152A452AC1EBB9CA7402B8D9CCC7AC0A77BFC80ACA976A79E90</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
+          <Hash>876A693A4FD1F50FB4862ACB8A4D3132B066F30272A754E6BFCD960F0DB90A78</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_71FC4A2A5327CB09.bin">
+          <Hash>4D96A28798031937034CBB3FE8147B07B741A13410D9188B1D2CB58A2531587E</Hash>
+        </FileItem>
+      </Device>
+      <Device Name="PusherControlDEV" ID="f52da1eb-1c96-483e-9b03-6c71f593bf08" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Basics/Main#PusherControl.bin">
+          <Hash>D416F2C9DBC2842E97ECE230DC299F3EEFE290F3BB1380A188CCDF32B2C74B91</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin">
+          <Hash>F925A6CE5FBEE265D5C52B4FCFA119FF9354FECDFF098AD10E5A124EEE19C1B9</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_READ_17210D0FAA2FB8D01.bin">
+          <Hash>CDCC9CA717E1348A5766155834DFCBB49DA344A5B39CB88F51921ADE07BC02F1</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_WRITE_247815A92EEC3FB0E.bin">
+          <Hash>0D6B0CA1E847DDB542E1D861D020A0C6C30707689D8757907256810D09DC85E7</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_2468F13B453622E42.bin">
+          <Hash>2AC900B2CAC6F5CEEEB40DE62804E90351B360BA1452A24372DAA331D144564C</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin">
+          <Hash>876A693A4FD1F50FB4862ACB8A4D3132B066F30272A754E6BFCD960F0DB90A78</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_195C19FF067434822.bin">
+          <Hash>3AAD2E795712A152A452AC1EBB9CA7402B8D9CCC7AC0A77BFC80ACA976A79E90</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_95DB6A67BB25D107.bin">
+          <Hash>3265B3BB610EFC51E142364A7DD837B5CEBE1DDDB9D1AA114A87CB00965F4AEA</Hash>
+        </FileItem>
+      </Device>
+      <Device Name="DEV_Test" ID="40cee2d3-88ee-406f-a466-cec3f22e5fe6" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Basics/Main#OPCUA_CONNECT_13434D741E95123C0.bin">
+          <Hash>F925A6CE5FBEE265D5C52B4FCFA119FF9354FECDFF098AD10E5A124EEE19C1B9</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#OPCUA_READ_1322467A4CC663E9C.bin">
+          <Hash>CCB8E73320F01FF4A069E54E7E77DFE32D4476C08F94F901D1222DDE52F22A45</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#Master.bin">
+          <Hash>F2718658BBBD2051A3D5F00634F8A3841D9081DE642037B573B4ECE6DE4E1EE0</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_239285CDFC5570564.bin">
+          <Hash>2C867AA0161602D67482EDFC22638D5D424359059546E52C0CC1AAA8830815EE</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_209BB7FF9E1CBD715.bin">
+          <Hash>E9D1D3396E5221999BD98655B2824925C0E7F2CEC5B7C50778277D953FD41D4A</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_PEER_24EBE21AE52A465D.bin">
+          <Hash>091B9F2D62F24700D2E2B942889542AB9CB421A8F92C085B8A358FFE64F4B14D</Hash>
+        </FileItem>
+        <FileItem Name="Basics/Main#CROSSCOMM_SENDER_11979BD604A4D38A2.bin">
+          <Hash>B5A6786B6CF7393FB6DD4C84A7FD2D00343C95CE3DC18C0CFCBA8B99ECAD5F59</Hash>
+        </FileItem>
+      </Device>
+    </DeployInformation>
+  </snapshot>
+  <deployment>
+    <network_profile name="(Local Test)">
+      <device id="8e25662b-7163-43d9-a62e-5110e1ee3534">
+        <sref snapshot="{BA4B3CF0-F1B6-497A-B27B-5CDBA8056021}" state="ACTIVE" />
+      </device>
+      <device id="e8ce0b76-9db5-4645-9af0-93f5f1f2be8e">
+        <sref snapshot="{BA4B3CF0-F1B6-497A-B27B-5CDBA8056021}" state="ACTIVE" />
+      </device>
+      <device id="f52da1eb-1c96-483e-9b03-6c71f593bf08">
+        <sref snapshot="{BA4B3CF0-F1B6-497A-B27B-5CDBA8056021}" state="ACTIVE" />
+      </device>
+      <device id="40cee2d3-88ee-406f-a466-cec3f22e5fe6">
+        <sref snapshot="{BA4B3CF0-F1B6-497A-B27B-5CDBA8056021}" state="ACTIVE" />
+      </device>
+    </network_profile>
+  </deployment>
+</baseline>

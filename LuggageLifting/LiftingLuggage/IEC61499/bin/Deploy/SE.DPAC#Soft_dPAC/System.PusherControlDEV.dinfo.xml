@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeployInformation ProjectName="LiftingLuggage" ProjectGuid="{A5C5F206-235D-47D9-8A3B-71E672475EE7}" System="System" DeviceName="PusherControlDEV" DeviceID="f52da1eb-1c96-483e-9b03-6c71f593bf08">
+  <UsedDll>IEC61499.dll|Runtime.Base.90E02843-42CC-4C2C-B657-AB6EE7D00471.dll</UsedDll>
+  <FileName>C:\Users\lizar\ltu_2026\D7033E\LuggageLifting\LiftingLuggage\IEC61499\System\System.sys</FileName>
+  <BuildTime>2026-09-30 17:59:40Z</BuildTime>
+  <StudioVersion>IEC 61499 IDE, Panther UAOv23.0 g5173 4181ef5 Thu Oct 12 16:53:40 2023</StudioVersion>
+  <StudioInfo>V1;8D04C4958887FA1EEA2E3F4AB59AB137BE1B1047B19BB737BE1B3B48AF9BB05B9614320B9590B12BA5173443BF8AC41ABA1D636AB598FE12B91F1253BB99EB1CB2430E54B394EF18A33F2B4FB8C3F13AE23B6B60EECEBC56E54B6B62F1CABD3FEE556667EFBCA74CE63D6811EECABD4E923D695BE7;</StudioInfo>
+  <ConfigFolder>C:\Users\lizar\ltu_2026\D7033E\LuggageLifting\LiftingLuggage\IEC61499\bin\Deploy\SE.DPAC#Soft_dPAC\Configuration</ConfigFolder>
+  <Actions />
+  <DeviceFileName>System.PusherControlDEV.smartdev.xml</DeviceFileName>
+  <DependenciesFileName>System.PusherControlDEV.fbdep.txt</DependenciesFileName>
+  <SnapshotGuid>{BA4B3CF0-F1B6-497A-B27B-5CDBA8056021}</SnapshotGuid>
+</DeployInformation>

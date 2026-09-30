@@ -1,0 +1,22 @@
+{
+  "snapshot": {
+    "guid": "ba4b3cf0-f1b6-497a-b27b-5cdba8056021",
+    "hash": "61E3E0CAC1B5990B8FC9EE73169A700F085ECB028182C0CD0216BEC612B79122",
+    "app": {
+      "hash": "61E3E0CAC1B5990B8FC9EE73169A700F085ECB028182C0CD0216BEC612B79122",
+      "items": [
+        "Main#LiftControl.bin",
+        "Main#OPCUA_CONNECT_13434D741E95123C0.bin",
+        "Main#OPCUA_READ_17210D0FAA2FB8D01.bin",
+        "Main#OPCUA_WRITE_1322467A4CC663E9C.bin",
+        "Main#CROSSCOMM_PEER_96076B73045C1761.bin",
+        "Main#CROSSCOMM_PEER_195C19FF067434822.bin",
+        "Main#CROSSCOMM_SENDER_45FE03D7848F2EB2.bin",
+        "Main#CROSSCOMM_SENDER_71FC4A2A5327CB09.bin",
+        "Device.bin",
+        "CommDesc.xml",
+        "OPCUAClientConfig.xml"
+      ]
+    }
+  }
+}

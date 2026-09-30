@@ -1,0 +1,26 @@
+@startuml seq_diagram
+title Master Slave architecture 
+
+
+actor Model as M
+participant MasterControl as C
+participant Lift as L
+participant Pusher as P
+
+
+M-> C : LuggageArrived
+C-> L : Extend
+L --> C : LiftExtended
+M-> C : LuggageLifted
+C-> P: Extend
+P --> C : PusherExtended
+C-> L : Retract
+P --> C:PusherRetracted
+note left
+Pusher retracts automatically 
+end note
+L --> C:LiftRetracted
+
+
+
+@enduml
