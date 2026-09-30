@@ -31,7 +31,11 @@ The control system consists of 3 main blocks: one Master Luggage Transport Contr
 * Receives information regarding the luggage status (`LuggageLoaded` and `LuggageLifted`).
 * Sends commands to the Slave cylinders to retract or extend and waits to receive confirmation from them.
 
-*(Reference: Figure 1 Sequence diagram)*
+<p align="center">
+  <img src="/Documentation/diagrams/out/sequence_diagram.png" width="600">
+  <br>
+  <i>Figure 1: Sequence diagram</i>
+</p>
 
 ---
 
