@@ -1,3 +1,0 @@
-<STCompiler >
-      <IMCode Version="308" MaxInstanceMemorySize="65472" Enable="GenerateModule,ExtMemLayout,CheckValueRange" />
-    </STCompiler>
